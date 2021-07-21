@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./source/_assets/sass/main.scss"],"names":[],"mappings":"AACA,KACE,yBACA,aAAF,C","file":"css/main.css","sourcesContent":["@import './variables';\nbody {\n  background-color: whitesmoke;\n  color: $color-primary;\n}"],"sourceRoot":""}
