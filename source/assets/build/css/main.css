@@ -1,3 +1,176 @@
-.theme-primary{background-color:#2ab2af}.theme-secondary{background-color:#c0df34}body{font-family:Karla,sans-serif}h1{color:#2ab2af}.lead{color:#c0df34}body{align-items:center;background:#e0eafc;background:linear-gradient(90deg,#cfdef3,#e0eafc);display:flex;flex-direction:column;justify-content:center;min-height:100vh;padding:16px}*{box-sizing:border-box}.row{clear:both;display:flex;flex-direction:column;width:100%}@media (min-width:768px){.row{flex-direction:row}}.container{margin:0 auto;max-width:1200px;width:100%}.col-8,.col-16{padding:32px;width:100%}@media (min-width:768px){.col-8{width:50%}}.card-conatiner{background:#fff}
+.theme-primary {
+  background-color: #2ab2af;
+}
 
-/*# sourceMappingURL=main.css.map*/
+.theme-secondary {
+  background-color: #c0df34;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+h1 {
+  color: #2ab2af;
+}
+
+.lead {
+  color: #c0df34;
+}
+
+h0 {
+  font-size: Infinitypx;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+h3 {
+  font-size: 26.6666666667px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 20px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+h6 {
+  font-size: 13.3333333333px;
+  line-height: 1.3;
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+body {
+  background: #E0EAFC;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  min-height: 100vh;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  clear: both;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div[class^=col-] {
+  padding: 32px;
+}
+
+.col-1 {
+  width: 6.25%;
+}
+
+.col-2 {
+  width: 12.5%;
+}
+
+.col-3 {
+  width: 18.75%;
+}
+
+.col-4 {
+  width: 25%;
+}
+
+.col-5 {
+  width: 31.25%;
+}
+
+.col-6 {
+  width: 37.5%;
+}
+
+.col-7 {
+  width: 43.75%;
+}
+
+.col-8 {
+  width: 50%;
+}
+
+.col-9 {
+  width: 56.25%;
+}
+
+.col-10 {
+  width: 62.5%;
+}
+
+.col-11 {
+  width: 68.75%;
+}
+
+.col-12 {
+  width: 75%;
+}
+
+.col-13 {
+  width: 81.25%;
+}
+
+.col-14 {
+  width: 87.5%;
+}
+
+.col-15 {
+  width: 93.75%;
+}
+
+.col-16 {
+  width: 100%;
+}
+
+.card-conatiner {
+  background: #fff;
+}

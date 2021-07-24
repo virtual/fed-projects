@@ -1,6 +1,10 @@
-.theme-primary {
-  background-color: $theme-primary;
-}
-.theme-secondary {
-  background-color: $theme-secondary;
+$themeColours: (
+  "primary": $theme-primary,
+  "secondary": $theme-secondary,
+);
+
+@each $themeColour, $i in $themeColours {
+  .theme-#{$themeColour} {
+    background-color: $i;
+  }
 }

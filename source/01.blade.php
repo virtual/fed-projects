@@ -12,6 +12,7 @@
 
         <p>Gain access to our full library of tutorials along with expert code reviews. 
         Perfect for any developers who are serious about honing their skills.</p>
+        
       </div>
     </div>
     <div class="row">
@@ -47,4 +48,5 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="{{ $page->baseUrl }}/resources/01/favicon-32x32.png">
 @endsection

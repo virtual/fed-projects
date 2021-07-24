@@ -1,3 +1,5 @@
+@use "sass:math";
+
 body {
   background: #E0EAFC;  /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
@@ -29,12 +31,16 @@ body {
   max-width: $screen-xl;
   margin: 0 auto;
 }
-.col-8, .col-16 {
-  width: 100%;
+div[class^="col-"] {
   padding: $gutter * 2;
-} 
-.col-8 {
-  @media (min-width: $screen-md) {
-    width: 50%;
-  }
+}
+
+// https://www.gavsblog.com/blog/for-each-while-loops-sass-scss
+$columns: 16;
+
+// https://sass-lang.com/d/slash-div
+@for $i from 1 through $columns {
+    .col-#{$i} {
+        width: math.div(100, $columns) * $i * 1%;
+    }
 }
