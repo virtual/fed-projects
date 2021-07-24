@@ -1,4 +1,3 @@
-body {
-  background-color: whitesmoke;
-  color: #003f7f;
-}
+.theme-primary{background-color:#2ab2af}.theme-secondary{background-color:#c0df34}body{font-family:Karla,sans-serif}h1{color:#2ab2af}.lead{color:#c0df34}body{align-items:center;background:#e0eafc;background:linear-gradient(90deg,#cfdef3,#e0eafc);display:flex;flex-direction:column;justify-content:center;min-height:100vh;padding:16px}*{box-sizing:border-box}.row{clear:both;display:flex;flex-direction:column;width:100%}@media (min-width:768px){.row{flex-direction:row}}.container{margin:0 auto;max-width:1200px;width:100%}.col-8,.col-16{padding:32px;width:100%}@media (min-width:768px){.col-8{width:50%}}.card-conatiner{background:#fff}
+
+/*# sourceMappingURL=main.css.map*/

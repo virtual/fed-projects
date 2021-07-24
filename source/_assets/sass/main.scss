@@ -1,5 +1,7 @@
+// https://dev.to/frontendmentor/16-front-end-projects-with-designs-to-help-improve-your-coding-skills-5ajl
 @import './variables';
-body {
-  background-color: whitesmoke;
-  color: $color-primary;
-}
+@import './colors';
+@import './typography';
+@import './structure';
+
+@import './components/cards';

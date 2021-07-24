@@ -1,0 +1,40 @@
+body {
+  background: #E0EAFC;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #CFDEF3, #E0EAFC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #CFDEF3, #E0EAFC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  min-height: 100vh;
+  padding: $gutter;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+* {
+  box-sizing: border-box;
+}
+.row {
+  clear: both;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $screen-md) {
+    flex-direction: row;
+  }
+}
+.container {
+  width: 100%;
+  max-width: $screen-xl;
+  margin: 0 auto;
+}
+.col-8, .col-16 {
+  width: 100%;
+  padding: $gutter * 2;
+} 
+.col-8 {
+  @media (min-width: $screen-md) {
+    width: 50%;
+  }
+}

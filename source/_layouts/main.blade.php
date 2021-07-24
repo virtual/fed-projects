@@ -8,6 +8,7 @@
         <title>{{ $page->title }}</title>
         <link rel="stylesheet" href="{{ $page->baseUrl }}{{ mix('css/main.css', 'assets/build') }}">
         <script defer src="{{ $page->baseUrl }}{{ mix('js/main.js', 'assets/build') }}"></script>
+        @yield('head')
     </head>
     <body class="text-gray-900 font-sans antialiased">
         @yield('body')
