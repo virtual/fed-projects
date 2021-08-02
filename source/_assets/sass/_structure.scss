@@ -36,8 +36,34 @@ div[class^="col-"] {
 $columns: 16;
 
 // https://sass-lang.com/d/slash-div
-@for $i from 1 through $columns {
+@media (min-width: $screen-md) {
+  @for $i from 1 through $columns {
     .col-#{$i} {
         width: math.div(100, $columns) * $i * 1%;
     }
+  }
+}
+
+$marginbuffers: 5;
+@for $i from 0 through $marginbuffers {
+  .my-#{$i} {
+    margin-top: $i * ($theme-font-size-base * .5);
+    margin-bottom: $i * ($theme-font-size-base * .5);
+  }
+  .mx-#{$i} {
+    margin-right: $i * ($theme-font-size-base * .5);
+    margin-left: $i * ($theme-font-size-base * .5);
+  }
+  .mt-#{$i} {
+    margin-top: $i * ($theme-font-size-base * .5);
+  }
+  .mb-#{$i} {
+    margin-bottom: $i * ($theme-font-size-base * .5);
+  }
+  .ml-#{$i} {
+    margin-left: $i * ($theme-font-size-base * .5);
+  }
+  .mr-#{$i} {
+    margin-right: $i * ($theme-font-size-base * .5);
+  }
 }

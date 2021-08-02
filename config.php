@@ -4,7 +4,7 @@ return [
     'production' => false,
     'baseUrl' => '',
     
-    'title' => 'Jigsaw',
-    'description' => 'Website description.',
+    'title' => 'Single price grid component',
+    'description' => 'Prices and benefits for the subscription.',
     'collections' => [],
 ];

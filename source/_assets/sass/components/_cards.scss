@@ -1,6 +1,10 @@
 .card-container {
   margin: 0;
   overflow: hidden;
-  background: #fff;
+  background: $color-white;
   border-radius: $border-radius;
+  box-shadow: 0 0 12px lighten($color-gray-blue, 15);
+}
+.card {
+  padding: $gutter * 3;
 }

@@ -1,22 +1,32 @@
 @use "sass:math";
 body {
   font-family: $theme-font-family;
+  line-height: $theme-font-line-height;
 }
 h1 {
   color: $theme-primary;
-}
-.lead {
-  color: $theme-secondary;
-}
+} 
 
 $count: 1;
 @while $count <= 6 {
     h#{$count} {
       margin-top: 0;
-      margin-bottom: $gutter;
-      font-size: (math.div($theme-font-size-base, math.div($count, 5)));
+      margin-bottom: $gutter * 2;
+      font-weight: 600;
+      font-size: .5 * (math.div($theme-font-size-base, math.div($count, 5)));
       line-height: 1.3;
     }
 
     $count: $count + 1;
+}
+
+.lead {
+  font-size: 1.2em;
+}
+.type-feature {
+  font-weight: 600;
+  font-size: 3em;
+}
+.type-dimmed {
+  opacity: .5;
 }
