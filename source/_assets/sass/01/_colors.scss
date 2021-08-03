@@ -1,6 +1,8 @@
 $themeColours: (
   "primary": $theme-primary,
-  "secondary": $theme-secondary
+  "secondary": $theme-secondary,
+  "yellow": $color-yellow,
+  "grey": $color-gray-blue
 );
 
 @each $themeColour, $i in $themeColours {

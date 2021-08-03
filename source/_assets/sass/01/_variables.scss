@@ -12,13 +12,16 @@ $border-radius: 8px;
 
 // Colors
 $color-white: #fff;
-$color-candy-pink: #a71068;
-$color-candy-orange: #f19d2d;
+$color-cyan: hsl(179, 62%, 43%);
+$color-cyan-light: hsl(179, 62%, 48%);
+$color-yellow: hsl(71, 73%, 54%);
+$color-gray-light: hsl(204, 43%, 93%);
+$color-gray-blue: hsl(218, 22%, 67%);
 
-$theme-primary: $color-candy-pink;
-$theme-secondary: $color-candy-orange; 
+$theme-primary: $color-cyan;
+$theme-secondary: $color-cyan-light; 
 
-$theme-font-size-base: 16px;
+$theme-font-size-base: 18px;
 $theme-font-line-height: $theme-font-size-base * 1.4;
 $theme-font-family: 'Karla', sans-serif;
 $theme-body-text-weight: 400;

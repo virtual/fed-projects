@@ -16,10 +16,3 @@
 button, .btn {
   @extend %button;
 }
-.btn-green {
-  color: $color-white;
-  background-color: $color-yellow;
-  &:hover {
-    background-color: darken($color-yellow, 10);
-  }
-}
