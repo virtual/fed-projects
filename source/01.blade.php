@@ -45,6 +45,7 @@
 @endsection
 
 @section('head')
+<title>Single price grid component</title>
 <link rel="stylesheet" href="{{ $page->baseUrl }}{{ mix('css/proj01.css', 'assets/build') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -4,7 +4,7 @@ return [
     'production' => false,
     'baseUrl' => '',
     
-    'title' => 'Single price grid component',
-    'description' => 'Prices and benefits for the subscription.',
+    'title' => 'Random front end projects',
+    'description' => 'Mew mew',
     'collections' => [],
 ];

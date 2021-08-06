@@ -2,12 +2,18 @@
 
 @section('body')
 <div class="p-8">
-    <h1>Hello world!</h1>
-    <p><a href="./01/">01</a></p>
+    <h1>Front-end projects</h1>
+    <p>
+      <ul class="list-unstyled">
+        <li><a href="./01/">01</a></li>
+        <li><a href="./02/">02</a></li>
+      </ul>
+    </p>
 </div>
 @endsection
 
 @section('head')
+<title>{{ $page->title }}</title>
 <link rel="stylesheet" href="{{ $page->baseUrl }}{{ mix('css/main.css', 'assets/build') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -1,0 +1,8 @@
+
+.btn-primary {
+  color: $color-white;
+  background-color: $theme-secondary;
+  &:hover {
+    background-color: darken($theme-secondary, 10);
+  }
+}

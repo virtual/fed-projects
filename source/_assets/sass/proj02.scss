@@ -1,11 +1,12 @@
 // https://dev.to/frontendmentor/16-front-end-projects-with-designs-to-help-improve-your-coding-skills-5ajl
 @import './variables';
-@import './01/variables';
+@import './02/variables';
 
 @import './imports.scss';
 
 // Local overrides
-@import './01/structure';
-@import './01/colors';
-@import './01/components/cards';
-@import './01/components/buttons';
+@import './02/structure';
+@import './02/colors';
+@import './02/typography';
+@import './02/components/cards';
+@import './02/components/buttons';

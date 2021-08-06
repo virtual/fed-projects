@@ -1,8 +1,6 @@
 // https://dev.to/frontendmentor/16-front-end-projects-with-designs-to-help-improve-your-coding-skills-5ajl
 @import './variables';
-@import './colors';
-@import './typography';
-@import './structure';
-@import './lists';
+
+@import './imports.scss';
 
 @import './components/buttons';

@@ -1,0 +1,35 @@
+// https://www.frontendmentor.io/challenges/four-card-feature-section-weK1eFYK
+
+$screen-sm: 375px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1440px;
+
+$gutter: 16px;
+$button-padding: 8px;
+$border-radius: 8px;
+
+
+// Colors
+$color-red: hsl(0, 78%, 62%);
+$color-cyan: hsl(180, 62%, 55%);
+$color-orange: hsl(34, 97%, 64%);
+$color-blue: hsl(212, 86%, 64%);
+
+$color-very-dark-blue: hsl(234, 12%, 34%);
+$color-grayish-blue: hsl(229, 6%, 66%);
+$color-very-light-gray: hsl(0, 0%, 98%);
+
+
+
+$color-white: #fff;  
+
+$theme-primary: $color-cyan;
+$theme-secondary: $color-red; 
+
+$theme-font-size-base: 15px;
+$theme-font-line-height: $theme-font-size-base * 1.4;
+$theme-font-family: 'Poppins', sans-serif;
+$theme-body-text-weight: 400;
+
+$theme-text-color: $color-very-dark-blue;
