@@ -1,13 +1,36 @@
 .card-container {
   margin: 0;
-
+  @media (min-width: $screen-md) {
+    @include flexbox();
+    @include align-items(center);
+  }
 }
 .card {
+  margin: ($gutter * 2) $gutter;
   padding: $gutter * 3;
   overflow: hidden;
   background: $color-white;
+  border-top: 5px solid #000;
   border-radius: $border-radius;
   box-shadow: 0 0 12px lighten($color-grayish-blue, 15);
-  margin: $gutter;
-  border-top: 4px solid #000;
+  h2 {
+    margin-bottom: $theme-font-size-base * .5;
+    font-weight: 400;
+    font-size: $theme-font-size-base * 1.5;
+  }
+  p {
+    color: $color-very-dark-blue;
+    font-weight: 200;
+  }
+  .card-icon {
+    width: 100%;
+    margin-top: 40px;
+    text-align: right;
+  }
+}
+.card-column {
+  @media (min-width: $screen-md) {
+    @include flex-direction(column);
+    @include flex-basis(calc(100%/3))
+  }
 }

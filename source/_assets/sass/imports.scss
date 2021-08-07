@@ -1,6 +1,7 @@
-@import './structure';
-@import './colors';
-@import './typography';
-@import './lists';
+@import './base/structure';
+@import './base/flexbox';
+@import './base/colors';
+@import './base/typography';
+@import './base/lists';
 
-@import './components/buttons';
+@import './base/components/buttons';
