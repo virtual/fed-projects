@@ -1,7 +1,7 @@
 @use "sass:math";
 h1 {
-  color: $theme-text-color;
-  font-weight: 200;
+  color: $theme-body-text-color;
+  font-weight: $theme-header-font-weight;
   font-size: $theme-font-size-base * 1.7;
   text-align: center;
   @media (min-width: $screen-md) {
@@ -17,7 +17,7 @@ h1 {
 p.lead {
   max-width: 700px;
   margin: 0 auto;
-  color: $color-very-dark-blue;
+  color: $theme-body-text-color;
   font-weight: 200;
   line-height: 1.6;
   text-align: center;

@@ -19,17 +19,16 @@ $color-blue: hsl(212, 86%, 64%);
 $color-very-dark-blue: hsl(234, 12%, 34%);
 $color-grayish-blue: hsl(229, 6%, 66%);
 $color-very-light-gray: hsl(0, 0%, 98%);
-
-
-
 $color-white: #fff;  
 
 $theme-primary: $color-cyan;
 $theme-secondary: $color-red; 
 
 $theme-font-size-base: 15px;
-$theme-font-line-height: $theme-font-size-base * 1.4;
+$theme-header-text-color: $color-very-dark-blue;
+$theme-body-text-color: $theme-header-text-color;
+// $theme-font-line-height: $theme-font-size-base * 1.4;
 $theme-font-family: 'Poppins', sans-serif;
-$theme-body-text-weight: 400;
-
-$theme-text-color: $color-very-dark-blue;
+$theme-header-font-family: $theme-font-family;
+// $theme-body-font-weight: 400;
+$theme-header-font-weight: 200;
