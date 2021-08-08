@@ -1,0 +1,15 @@
+@use "sass:math";
+.menu-container {
+  @include flexbox();
+
+  @include flex-direction(row);
+  nav {
+    padding: 0 math.div($gutter, 2);
+    @include flexbox();
+    @include flex-direction(row);
+    @include flex-grow(1);
+    @media (min-width: $screen-md) {
+      @include justify-content(space-between);
+    }
+  }
+}

@@ -1,4 +1,6 @@
-
+.btn {
+  box-shadow: 0 0 12px darken($theme-primary, 10);
+}
 .btn-green {
   color: $color-white;
   background-color: $color-yellow;

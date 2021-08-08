@@ -11,7 +11,7 @@
   overflow: hidden;
   background: $color-white;
   border-top: 5px solid #000;
-  border-radius: $border-radius;
+  border-radius: $button-border-radius;
   box-shadow: 0 0 12px lighten($color-grayish-blue, 15);
   h2 {
     margin-bottom: $theme-font-size-base * .5;
@@ -19,7 +19,7 @@
     font-size: $theme-font-size-base * 1.5;
   }
   p {
-    color: $color-very-dark-blue;
+    color: $theme-body-text-color;
     font-weight: 200;
   }
   .card-icon {

@@ -1,0 +1,25 @@
+$themeColours: (
+  "primary": $theme-primary,
+  "secondary": $theme-secondary,
+  "red": $color-red
+);
+
+@each $themeColour, $i in $themeColours {
+  .theme-#{$themeColour} {
+    color: $color-white;
+    background-color: $i;
+  }
+}
+@each $themeColour, $i in $themeColours {
+  .color-#{$themeColour} {
+    color: $i;
+  }
+}
+
+header.header {
+  background-color: $color-white;
+}
+footer.footer {
+  color: $color-white;
+  background-color: $color-dark-violet;
+}

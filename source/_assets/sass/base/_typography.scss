@@ -13,7 +13,7 @@ $count: 1;
     h#{$count} {
       margin-top: 0;
       margin-bottom: $gutter * 2;
-      font-weight: 600;
+      font-weight: $theme-header-font-weight;
       font-size: .5 * (math.div($theme-font-size-base, math.div($count, 5)));
       line-height: 1.3;
     }

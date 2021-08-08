@@ -1,0 +1,18 @@
+body {
+  background-color: $color-gray-light;
+  margin: 0;
+  padding: 0;
+}
+
+header.header, 
+.sub-footer-container,
+.main-container,
+footer.footer {
+  @include flexbox();
+  width: 100%;
+  padding: $gutter;
+  @include flex-direction(column);
+}
+.main-container {
+  @include flex-grow(1);
+}

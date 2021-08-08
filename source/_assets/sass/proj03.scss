@@ -1,0 +1,14 @@
+// https://dev.to/frontendmentor/16-front-end-projects-with-designs-to-help-improve-your-coding-skills-5ajl
+@import './base/variables';
+@import './03/variables';
+
+@import './imports.scss';
+
+// Local overrides
+@import './03/structure';
+@import './03/menu';
+@import './03/footer';
+@import './03/colors';
+@import './03/typography';
+@import './03/components/cards';
+@import './03/components/buttons';

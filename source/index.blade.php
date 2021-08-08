@@ -4,9 +4,10 @@
 <div class="p-8">
     <h1>Front-end projects</h1>
     <p>
-      <ul class="list-unstyled">
+      <ul class="list-unstyled list-inline">
         <li><a href="./01/">01</a></li>
         <li><a href="./02/">02</a></li>
+        <li><a href="./03/">03</a></li>
       </ul>
     </p>
 </div>

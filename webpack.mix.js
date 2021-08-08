@@ -11,6 +11,7 @@ mix.jigsaw()
     .sass('source/_assets/sass/main.scss', 'css/main.css')
     .sass('source/_assets/sass/proj01.scss', 'css/proj01.css')
     .sass('source/_assets/sass/proj02.scss', 'css/proj02.css')
+    .sass('source/_assets/sass/proj03.scss', 'css/proj03.css')
     .options({
         processCssUrls: false,
     })
