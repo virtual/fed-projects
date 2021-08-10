@@ -44,6 +44,9 @@ $columns: 16;
 
 $marginbuffers: 5;
 @for $i from 0 through $marginbuffers {
+  .m-#{$i} {
+    margin: $i * ($theme-font-size-base * .5);
+  }
   .my-#{$i} {
     margin-top: $i * ($theme-font-size-base * .5);
     margin-bottom: $i * ($theme-font-size-base * .5);
@@ -63,5 +66,32 @@ $marginbuffers: 5;
   }
   .mr-#{$i} {
     margin-right: $i * ($theme-font-size-base * .5);
+  }
+}
+
+$paddingbuffers: 5;
+@for $i from 0 through $paddingbuffers {
+  .p-#{$i} {
+    padding: $i * ($theme-font-size-base * .5);
+  }
+  .py-#{$i} {
+    padding-top: $i * ($theme-font-size-base * .5);
+    padding-bottom: $i * ($theme-font-size-base * .5);
+  }
+  .px-#{$i} {
+    padding-right: $i * ($theme-font-size-base * .5);
+    padding-left: $i * ($theme-font-size-base * .5);
+  }
+  .pt-#{$i} {
+    padding-top: $i * ($theme-font-size-base * .5);
+  }
+  .pb-#{$i} {
+    padding-bottom: $i * ($theme-font-size-base * .5);
+  }
+  .pl-#{$i} {
+    padding-left: $i * ($theme-font-size-base * .5);
+  }
+  .pr-#{$i} {
+    padding-right: $i * ($theme-font-size-base * .5);
   }
 }

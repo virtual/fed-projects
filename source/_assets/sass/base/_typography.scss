@@ -10,7 +10,7 @@ h1 {
 
 $count: 1;
 @while $count <= 6 {
-    h#{$count} {
+    h#{$count}, .h#{$count} {
       margin-top: 0;
       margin-bottom: $gutter * 2;
       font-weight: $theme-header-font-weight;
@@ -30,4 +30,7 @@ $count: 1;
 }
 .type-dimmed {
   opacity: .5;
+}
+.text-center {
+  text-align: center;
 }

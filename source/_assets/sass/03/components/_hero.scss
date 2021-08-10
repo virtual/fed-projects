@@ -1,0 +1,15 @@
+.hero-container {
+  padding: 40px;
+  .hero-title {
+    @media (min-width: $screen-md) {
+      font-size: 60px;
+    }
+  }
+  .hero-description {
+  }
+}
+.hero-bg-right {
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
