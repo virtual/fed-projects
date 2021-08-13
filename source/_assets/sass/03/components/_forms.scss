@@ -1,0 +1,22 @@
+@use "sass:math";
+.cta-form {
+  width: 100%;
+  background:linear-gradient(to bottom, $color-white, $color-white 50%, $color-gray-light 50%);
+  form {
+    border-radius: $theme-font-size-base;
+    @include flexbox();
+    @include flex-direction(column);
+    @include align-items(stretch);
+    @media (min-width: $screen-md) {
+      @include flex-direction(row);
+    }
+    input, button {
+      margin: $theme-font-size-base;
+      border-radius: math.div($theme-font-size-base, 4);
+    }
+    input[type=text] {
+      flex-grow: 1;
+      padding: $theme-font-size-base;
+    }
+  }
+}

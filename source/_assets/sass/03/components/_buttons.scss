@@ -4,17 +4,3 @@
   padding-left: $button-padding * 4;
   padding-right: $button-padding * 4;
 }
-.btn-primary {
-  color: $color-white;
-  background-color: $theme-primary;
-  &:hover {
-    background-color: darken($theme-primary, 10);
-  }
-}
-.btn-secondary {
-  color: $color-white;
-  background-color: $theme-secondary;
-  &:hover {
-    background-color: darken($theme-secondary, 10);
-  }
-}

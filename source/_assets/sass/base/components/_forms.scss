@@ -1,8 +1,9 @@
 input {
   padding: $button-padding;
+  font-size: $theme-font-size-base;
+  font-family: $theme-font-family;
   background: $color-white;
   border: 1px solid $color-gray-light;
-  font-size: $theme-font-size-base;
 }
 form {
   width: 100%;

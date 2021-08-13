@@ -3,11 +3,13 @@ $themeColours: (
   "secondary": $theme-secondary,
   "red": $color-red
 );
-
+body {
+  background-color: $color-gray-light;
+}
 header.header {
   background-color: $color-white;
 }
 footer.footer {
   color: $color-white;
-  background-color: $color-dark-violet;
+  background-color: $color-very-dark-violet;
 }

@@ -29,3 +29,13 @@ $theme-font-family: 'Karla', sans-serif !default;
 $theme-header-font-family: $theme-font-family !default;
 $theme-body-font-weight: 400 !default;
 $theme-header-font-weight: 700 !default;
+
+
+@function set-color($color) {
+  @if (lightness($color) > 40) {
+    @return $theme-body-text-color;
+  }
+  @else {
+    @return $color-white;
+  }
+}

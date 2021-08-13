@@ -3,6 +3,7 @@
   width: 100%;
   padding: ($button-padding * 2) $button-padding;
   font-size: 1.125rem;
+  font-family: $theme-font-family;
   text-align: center;
   text-decoration: none;
   border: 0;
@@ -11,7 +12,24 @@
   &:focus {
     outline: 2px solid darken($theme-primary, 20);
   }
+  &:hover, &:focus, &:active {
+    color: initial;
+  }
 }
 button, .btn {
   @extend %button;
+}
+.btn-primary {
+  color: set-color($theme-primary);
+  background-color: $theme-primary;
+  &:hover {
+    background-color: darken($theme-primary, 10);
+  }
+}
+.btn-secondary {
+  color: set-color($theme-secondary);
+  background-color: $theme-secondary;
+  &:hover {
+    background-color: darken($theme-secondary, 10);
+  }
 }

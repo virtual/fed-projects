@@ -24,7 +24,8 @@
     </div>
   </div>
 
-  <section class="hero-container hero-bg-right" style="background-image: url('../resources/03/illustration-working.svg')">
+  <section class="hero-container hero-bg-right"
+    style="background-image: url('../resources/03/illustration-working.svg')">
     <div class="container">
 
       <div class="row">
@@ -33,26 +34,26 @@
 
           <p class="lead hero-description">Build your brand’s recognition and get detailed insights
             on how your links are performing.</p>
-    
+
           <p><a href="#" class="btn btn-primary">Get Started</a></p>
         </div>
       </div>
 
-     
-
-     
-
     </div>
   </section>
-  <form class="theme-secondary p-3">
-    <input type="search" placeholder="Shorten a link here..." />
-    <button type="submit" class="btn btn-primary">Shorten It!</button>
-  </form>
+
 
 </header>
-
+<section class="cta-form">
+  <div class="container">
+    <form class="theme-secondary p-3 width-100">
+      <input type="text" placeholder="Shorten a link here..." />
+      <button type="submit" class="btn btn-primary">Shorten It!</button>
+    </form>
+  </div>
+</section>
 <div class="main-container">
-  <main class="main container">
+  <main class="main container py-5">
 
 
     <h2 class="text-center mt-4 h2">Advanced Statistics</h2>
@@ -89,9 +90,9 @@
 
   </main>
 </div>
-<div class="sub-footer-container">
-  <aside class="container">
-    <p>Boost your links today</p>
+<div class="sub-footer-container theme-inversed theme-secondary">
+  <aside class="container text-center py-3">
+    <h2>Boost your links today</h2>
     <p><a href="#" class="btn btn-primary">Get Started</a></p>
   </aside>
 </div>

@@ -96,3 +96,16 @@ $paddingbuffers: 5;
     padding-right: $i * ($theme-font-size-base * .5);
   }
 }
+
+
+.full-width {
+  position: relative;
+  right: 50%;
+  left: 50%;
+  width: 100vw;
+  margin-right: -50vw;
+  margin-left: -50vw;
+}
+.width-100 {
+  width: 100%;
+}
