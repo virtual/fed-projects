@@ -6,8 +6,9 @@ body {
   @include align-items(center);
   @include justify-content(center);
   min-height: 100vh;
-  padding: $gutter;
-  background: smokewhite;
+  margin: 0;
+  padding: 0; 
+  background: whitesmoke;
 }
 * {
   box-sizing: border-box;
@@ -31,7 +32,7 @@ div[class^="col-"] {
 }
 
 // https://www.gavsblog.com/blog/for-each-while-loops-sass-scss
-$columns: 16;
+$columns: 16 !default;
 
 // https://sass-lang.com/d/slash-div
 @media (min-width: $screen-md) {

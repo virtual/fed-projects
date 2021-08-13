@@ -1,7 +1,6 @@
 @use "sass:math";
+$headingcountmax: 2;
 h1 {
-  color: $theme-body-text-color;
-  font-weight: $theme-header-font-weight;
   font-size: $theme-font-size-base * 1.7;
   text-align: center;
   @media (min-width: $screen-md) {

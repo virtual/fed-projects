@@ -1,31 +1,31 @@
-$color-primary: #003f7f;
+$color-primary: #003f7f !default;
 
-$screen-sm: 375px;
-$screen-md: 768px;
-$screen-lg: 992px;
-$screen-xl: 1200px;
+$screen-sm: 375px !default;
+$screen-md: 768px !default;
+$screen-lg: 992px !default;
+$screen-xl: 1200px !default;
 
-$gutter: 16px;
-$button-padding: 8px;
-$button-border-radius: 8px;
+$gutter: 16px !default;
+$button-padding: 8px !default;
+$button-border-radius: 8px !default;
 
 
 // Colors
-$color-white: #fff;
-$color-candy-pink: #a71068;
-$color-candy-orange: #f19d2d;
+$color-white: #fff !default;
+$color-candy-pink: #a71068 !default;
+$color-candy-orange: #f19d2d !default;
 
-$color-gray: #585858;
-$color-gray-light: #dddddd;
+$color-gray: #585858 !default;
+$color-gray-light: #dddddd !default;
 
-$theme-primary: $color-candy-pink;
-$theme-secondary: $color-candy-orange; 
+$theme-primary: $color-candy-pink !default;
+$theme-secondary: $color-candy-orange !default;
 
-$theme-font-size-base: 16px;
-$theme-header-text-color: $color-gray;
-$theme-body-text-color: $theme-header-text-color;
-$theme-font-line-height: $theme-font-size-base * 1.5;
-$theme-font-family: 'Karla', sans-serif;
-$theme-header-font-family: $theme-font-family;
-$theme-body-font-weight: 400;
-$theme-header-font-weight: $theme-body-font-weight;
+$theme-font-size-base: 16px !default;
+$theme-header-text-color: $color-gray !default;
+$theme-body-text-color: $theme-header-text-color !default;
+$theme-font-line-height: $theme-font-size-base * 1.5 !default;
+$theme-font-family: 'Karla', sans-serif !default;
+$theme-header-font-family: $theme-font-family !default;
+$theme-body-font-weight: 400 !default;
+$theme-header-font-weight: 700 !default;

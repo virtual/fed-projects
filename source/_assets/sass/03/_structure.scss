@@ -1,8 +1,6 @@
 @use "sass:math";
 body {
   background-color: $color-gray-light;
-  margin: 0;
-  padding: 0;
 }
 
 header.header, 
@@ -19,10 +17,3 @@ footer.footer {
 }
 
 $columns: 24;
-@media (min-width: $screen-md) {
-  @for $i from 1 through $columns {
-    .col-#{$i} {
-        width: math.div(100, $columns) * $i * 1%;
-    }
-  }
-}

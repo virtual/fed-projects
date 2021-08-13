@@ -4,15 +4,3 @@ $themeColours: (
   "yellow": $color-yellow,
   "grey": $color-gray-blue
 );
-
-@each $themeColour, $i in $themeColours {
-  .theme-#{$themeColour} {
-    color: $color-white;
-    background-color: $i;
-  }
-}
-@each $themeColour, $i in $themeColours {
-  .color-#{$themeColour} {
-    color: $i;
-  }
-}

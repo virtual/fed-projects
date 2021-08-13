@@ -1,6 +1,6 @@
 // https://dev.to/frontendmentor/16-front-end-projects-with-designs-to-help-improve-your-coding-skills-5ajl
-@import './base/variables';
 @import './01/variables';
+@import './base/variables';
 
 @import './imports.scss';
 
@@ -9,3 +9,7 @@
 @import './01/colors';
 @import './01/components/cards';
 @import './01/components/buttons';
+
+@import './base/structure';
+@import './base/colors';
+@import './base/typography';

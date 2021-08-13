@@ -6,17 +6,6 @@ $themeColours: (
 );
 
 @each $themeColour, $i in $themeColours {
-  .theme-#{$themeColour} {
-    color: $color-white;
-    background-color: $i;
-  }
-}
-@each $themeColour, $i in $themeColours {
-  .color-#{$themeColour} {
-    color: $i;
-  }
-}
-@each $themeColour, $i in $themeColours {
   .card.card-theme-#{$themeColour} {
     border-top-color: $i;
   }
