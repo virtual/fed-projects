@@ -785,10 +785,22 @@ h4, .h4 {
 @media (min-width: 768px) {
   .hero-container .hero-title {
     font-size: 60px;
+    line-height: 1.1;
+  }
+}
+@media (min-width: 1440px) {
+  .hero-container .hero-title {
+    font-size: 80px;
   }
 }
 .hero-container .hero-description {
   color: #9e9aa7;
+}
+@media (min-width: 768px) {
+  .hero-container .hero-description {
+    font-size: 25.2px;
+    line-height: 1.6;
+  }
 }
 
 .hero-bg-right {

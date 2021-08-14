@@ -3,10 +3,18 @@
   .hero-title {
     @media (min-width: $screen-md) {
       font-size: 60px;
+      line-height: 1.1;
+    }
+    @media (min-width: $screen-xl) {
+      font-size: 80px;
     }
   }
   .hero-description {
     color: $color-grayish-violet;
+    @media (min-width: $screen-md) {
+      font-size: $theme-font-size-base * 1.4;
+      line-height: 1.6;
+    }
   }
 }
 .hero-bg-right {
