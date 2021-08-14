@@ -1,4 +1,8 @@
 @use "sass:math";
 .menu-container {
-  
+  nav {
+    a:not(.btn) {
+      color: $color-grayish-violet;
+    }
+  }
 }
