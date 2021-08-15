@@ -64,6 +64,9 @@
     <section class="card-container">
 
       <div class="card">
+        <div class="card-image">
+          <img src="../resources/03/icon-brand-recognition.svg" alt="" />
+        </div>
         <h3>Brand Recognition</h3>
 
         <p>Boost your brand recognition with each click. Generic links don’t
@@ -72,6 +75,9 @@
 
 
       <div class="card">
+        <div class="card-image">
+          <img src="../resources/03/icon-detailed-records.svg" alt="" />
+        </div>
         <h3>Detailed Records</h3>
 
         <p>Gain insights into who is clicking your links. Knowing when and where
@@ -80,6 +86,9 @@
 
 
       <div class="card">
+        <div class="card-image">
+          <img src="../resources/03/icon-fully-customizable.svg" alt="" />
+        </div>
         <h3>Fully Customizable</h3>
 
         <p>Improve brand awareness and content discoverability through customizable

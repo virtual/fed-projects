@@ -1,5 +1,6 @@
 @use "sass:math";
 body {
+  font-size: $theme-font-size-base;
   font-family: $theme-font-family;
   line-height: $theme-font-line-height;
 }
