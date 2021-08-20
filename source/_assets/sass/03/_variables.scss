@@ -22,7 +22,7 @@ $button-border-radius: 999px;
 
 // Colors
 
-$color-cyan: hsl(180, 66%, 49%);
+$color-cyan: #2acfcf;
 $color-dark-violet: hsl(257, 27%, 26%);
 
 $color-red: hsl(0, 87%, 67%);
@@ -34,6 +34,12 @@ $color-very-dark-blue: hsl(255, 11%, 22%);
 $color-very-dark-violet: hsl(260, 8%, 14%);
 
 $color-white: #fff;  
+
+// Alert https://colors.eva.design/
+$alert-success: #7ABC16 !default;
+$alert-info: #7583FF !default;
+$alert-warning: #FFE605 !default;
+$alert-danger: #FF5D35 !default;
 
 $theme-primary: $color-cyan;
 $theme-secondary: $color-dark-violet; 

@@ -16,6 +16,7 @@
         "sass-loader": "^12.1.0"
     },
     "dependencies": {
-        "mix": "^0.0.1"
+        "mix": "^0.0.1",
+        "pristinejs": "^0.1.9"
     }
 }

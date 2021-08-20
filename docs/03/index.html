@@ -6,9 +6,9 @@
         <link rel="canonical" href="https://virtual.github.io/fed-projects/03">
         <meta name="description" content="Mew mew">
 
-        <script defer src="https://virtual.github.io/fed-projects/assets/build/js/main.js?id=0d764a3f8fd44e5b8c18"></script>
+        <script defer src="https://virtual.github.io/fed-projects/assets/build/js/main.js?id=45bd235987e783fd73e0"></script>
         <title>URL Shortening Api</title>
-<link rel="stylesheet" href="https://virtual.github.io/fed-projects/assets/build/css/proj03.css?id=860eb813e789a7907307">
+<link rel="stylesheet" href="https://virtual.github.io/fed-projects/assets/build/css/proj03.css?id=f7a6e939594c26ee0078">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
@@ -60,8 +60,14 @@
 </header>
 <section class="cta-form">
   <div class="container">
-    <form class="theme-secondary p-3 width-100">
-      <input type="text" placeholder="Shorten a link here..." />
+    <form id="submitURL" class="theme-secondary p-3 width-100">
+      <div class="form-group">
+      <input type="text" 
+      pattern="/^(https:|http:|www\.)\S*$/i"
+      placeholder="Shorten a link here..." 
+        required data-pristine-required-message="Link cannot be empty"
+        data-pristine-pattern-message="URL should start with http: or https:" />
+      </div>
       <button type="submit" class="btn btn-primary">Shorten It!</button>
     </form>
   </div>

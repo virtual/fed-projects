@@ -46,8 +46,14 @@
 </header>
 <section class="cta-form">
   <div class="container">
-    <form class="theme-secondary p-3 width-100">
-      <input type="text" placeholder="Shorten a link here..." />
+    <form id="submitURL" class="theme-secondary p-3 width-100">
+      <div class="form-group">
+      <input type="text" 
+      pattern="/^(https:|http:|www\.)\S*$/i"
+      placeholder="Shorten a link here..." 
+        required data-pristine-required-message="Link cannot be empty"
+        data-pristine-pattern-message="URL should start with http: or https:" />
+      </div>
       <button type="submit" class="btn btn-primary">Shorten It!</button>
     </form>
   </div>

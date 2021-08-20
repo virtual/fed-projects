@@ -1,3 +1,5 @@
+var Pristine = require('pristinejs');
+
 var app = {
   changeScrollableOffset: function(px) {
     console.log('changeScrollableOffset', px)
@@ -25,3 +27,33 @@ app.toggleMenu();
 //     app.checkValid();
 //   });
 // });
+
+// https://github.com/sha256/Pristine
+
+let pristineDefaultConfig = {
+  // class of the parent element where the error/success class is added
+  classTo: 'form-group',
+  errorClass: 'has-danger',
+  successClass: 'has-success',
+  // class of the parent element where error text element is appended
+  errorTextParent: 'form-group',
+  // type of element to create for the error text
+  errorTextTag: 'div',
+  // class of the error text element
+  errorTextClass: 'text-help' 
+};
+window.onload = function () {
+
+  var form = document.getElementById("submitURL");
+
+  // create the pristine instance
+  var pristine = new Pristine(form, pristineDefaultConfig, true);
+
+  form.addEventListener('submit', function (e) {
+     e.preventDefault();
+     
+     // check if the form is valid
+     var valid = pristine.validate(); // returns true or false
+    console.log(valid)
+  });
+};

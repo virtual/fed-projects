@@ -14,9 +14,36 @@
       margin: $theme-font-size-base;
       border-radius: math.div($theme-font-size-base, 4);
     }
-    input[type=text] {
+    .form-group {
       flex-grow: 1;
+      margin-right: $theme-font-size-base;
+    }
+    input[type=text] {
+      width: 100%;
+      
       padding: $theme-font-size-base;
     }
+  }
+}
+
+.form-group {
+  position: relative;
+  &.has-danger {
+    input {
+      box-shadow: 0 0 0 3px $alert-danger;
+      &::placeholder{
+        color: rgba($alert-danger, .5);
+      }
+    }
+    .text-help {
+      &.pristine-error {
+        position: absolute;
+        left: $theme-font-size-base;
+        margin-top: -10px;
+        color: $alert-danger;
+        font-size: 14px;
+        font-style: italic;
+      }
+    } 
   }
 }
