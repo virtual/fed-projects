@@ -1,7 +1,9 @@
 @use "sass:math";
 .cta-form {
   width: 100%;
-  background:linear-gradient(to bottom, $color-white, $color-white 50%, $color-gray-light 50%);
+  .cta-form-background {
+    background: linear-gradient(to bottom, $color-white, $color-white 50%, $color-gray-light 50%);
+  }
   form {
     border-radius: $theme-font-size-base;
     @include flexbox();
@@ -10,40 +12,74 @@
     @media (min-width: $screen-md) {
       @include flex-direction(row);
     }
-    input, button {
+    input,
+    button {
       margin: $theme-font-size-base;
       border-radius: math.div($theme-font-size-base, 4);
     }
     .form-group {
-      flex-grow: 1;
-      margin-right: $theme-font-size-base;
+      @include flexbox;
+      flex-grow: 1; 
     }
-    input[type=text] {
+    input[type="text"] {
       width: 100%;
-      
+
       padding: $theme-font-size-base;
     }
   }
+  .container {
+    padding-right: $gutter;
+    padding-left: $gutter;
+    @media (min-width: $screen-xl) {
+      padding-right: 0;
+      padding-left: 0;
+    }
+  }
 }
-
 .form-group {
   position: relative;
   &.has-danger {
     input {
       box-shadow: 0 0 0 3px $alert-danger;
-      &::placeholder{
-        color: rgba($alert-danger, .5);
+      &::placeholder {
+        color: rgba($alert-danger, 0.5);
       }
     }
     .text-help {
       &.pristine-error {
         position: absolute;
+        bottom: -12px;
         left: $theme-font-size-base;
-        margin-top: -10px;
         color: $alert-danger;
         font-size: 14px;
         font-style: italic;
       }
-    } 
+    }
+  }
+}
+
+.cta-form-results {
+  table {
+    width: 100%;
+    margin-top: $gutter * 2;
+    margin-bottom: $gutter * 2;
+  }
+  thead {
+    @extend .sr-only;
+  }
+  tbody {
+    tr {
+      td {
+        padding: $theme-font-size-base ($theme-font-size-base * 2);
+        background-color: $color-white;
+        button {
+          width: 100%;
+          border-radius: 4px;
+        }
+      }
+    }
+    tr + tr {
+      border-top: $theme-font-size-base solid $color-gray-light;
+    }
   }
 }

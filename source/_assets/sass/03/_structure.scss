@@ -12,6 +12,12 @@ footer.footer {
   padding: $gutter;
   @include flex-direction(column);
 }
+header.header {
+  padding: 0;
+  .container {
+    padding: $gutter;
+  }
+}
 .main-container {
   @include flex-grow(1);
 }

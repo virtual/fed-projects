@@ -2,7 +2,7 @@ var Pristine = require('pristinejs');
 
 var app = {
   changeScrollableOffset: function(px) {
-    console.log('changeScrollableOffset', px)
+    // console.log('changeScrollableOffset', px)
   },
   toggleMenu: function(el) {
     // if (el.classList.contains('show')) {
@@ -55,5 +55,8 @@ window.onload = function () {
      // check if the form is valid
      var valid = pristine.validate(); // returns true or false
     console.log(valid)
+    if (valid) {
+      document.getElementById('ctaResults').classList.remove('d-none');
+    }
   });
 };

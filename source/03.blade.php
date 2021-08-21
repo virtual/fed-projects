@@ -45,17 +45,38 @@
 
 </header>
 <section class="cta-form">
+  <div class="cta-form-background">
+    <div class="container">
+      <form id="submitURL" class="theme-secondary p-3 width-100">
+        <div class="form-group">
+        <input type="text" 
+        pattern="/^(https:|http:|www\.)\S*$/i"
+        placeholder="Shorten a link here..." 
+          required data-pristine-required-message="Link cannot be empty"
+          data-pristine-pattern-message="URL should start with http: or https:" />
+        </div>
+        <button type="submit" class="btn btn-primary">Shorten It!</button>
+      </form>
+    </div>
+  </div>
+
   <div class="container">
-    <form id="submitURL" class="theme-secondary p-3 width-100">
-      <div class="form-group">
-      <input type="text" 
-      pattern="/^(https:|http:|www\.)\S*$/i"
-      placeholder="Shorten a link here..." 
-        required data-pristine-required-message="Link cannot be empty"
-        data-pristine-pattern-message="URL should start with http: or https:" />
-      </div>
-      <button type="submit" class="btn btn-primary">Shorten It!</button>
-    </form>
+    <div id="ctaResults" class="cta-form-results d-none">
+      <table>
+        <thead><tr>
+          <th>Original Link</th>  
+          <th>Shortened Link</th>  
+          <th>Action</th>  
+        </tr></thead>
+        <tbody>
+          <tr>
+            <td>https://subeta.net/users/Virtual</td>
+            <td><a href="#">https://fake.ly/sv</a></td>
+            <td><button type="submit" class="btn btn-primary btn-sm">Copy</td>
+          </tr> 
+        </tbody>
+      </table>
+    </div>
   </div>
 </section>
 <div class="main-container">
@@ -121,7 +142,7 @@
       </div>
       <div class="col-4">
         <h3>Features</h3>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled footer-link-list">
           <li><a href="#">Link Shortening</a></li>
           <li><a href="#">Branded Links</a></li>
           <li><a href="#">Analytics</a></li>
@@ -130,7 +151,7 @@
       <div class="col-4">
 
         <h3>Resources</h3>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled footer-link-list">
           <li><a href="#">Blog</a></li>
           <li><a href="#">Developers</a></li>
           <li><a href="#">Support</a></li>
@@ -139,7 +160,7 @@
       <div class="col-4">
 
         <h3>Company</h3>
-        <ul class="list-unstyled">
+        <ul class="list-unstyled footer-link-list">
           <li><a href="#">About</a></li>
           <li><a href="#">Our Team</a></li>
           <li><a href="#">Careers</a></li>
@@ -147,8 +168,13 @@
         </ul>
       </div>
       <div class="col-6">
-
-        social
+        <h3 class="sr-only">Social Media Links</h3>
+        <ul class="mt-0 list-inline-block list-unstyled list-padded list-links">
+          <li><a href="#"><img alt="facebook" src="../resources/03/icon-facebook.svg"></a></li>
+          <li><a href="#"><img alt="twitter" src="../resources/03/icon-twitter.svg"></a></li>
+          <li><a href="#"><img alt="pinterest" src="../resources/03/icon-pinterest.svg"></a></li>
+          <li><a href="#"><img alt="instagram" src="../resources/03/icon-instagram.svg"></a></li>
+        </ul>
       </div>
     </div>
   </div>

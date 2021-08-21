@@ -22,14 +22,14 @@ footer.footer {
   background-size: cover;
 }
 .sub-footer-container {
-  background-image: url('/resources/03/bg-boost-mobile.svg');
+  background-image: url('../../../resources/03/bg-boost-mobile.svg');
   @media (min-width: $screen-md) {
-    background-image: url('/resources/03/bg-boost-desktop.svg');
+    background-image: url('../../../resources/03/bg-boost-desktop.svg');
   }
 }
 .cta-form .theme-secondary {
-  background-image: url('/resources/03/bg-shorten-mobile.svg');
+  background-image: url('../../../resources/03/bg-shorten-mobile.svg');
   @media (min-width: $screen-md) {
-    background-image: url('/resources/03/bg-shorten-desktop.svg');
+    background-image: url('../../../resources/03/bg-shorten-desktop.svg');
   }
 }

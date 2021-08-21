@@ -1,5 +1,18 @@
+@use "sass:math";
 footer.footer {
   img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(14%) saturate(0%) hue-rotate(79deg) brightness(101%) contrast(101%);
+    filter: brightness(0) saturate(100%) invert(100%) sepia(14%) saturate(0%) hue-rotate(79deg) brightness(101%)
+      contrast(101%);
+  }
+  .footer-link-list {
+    a {
+      display: inline-block;
+      padding: math.div($theme-font-size-base, 4) 0;
+      color: $color-gray;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }

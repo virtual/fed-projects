@@ -8,6 +8,7 @@
   text-decoration: none;
   border: 0;
   border-radius: $button-border-radius;
+  cursor: pointer;
   transition: background-color .2s ease-in;
   &:focus {
     outline: 2px solid darken($theme-primary, 20);
@@ -18,7 +19,12 @@
 }
 button, .btn {
   @extend %button;
+  &.btn-sm {
+    padding: ($button-padding * 1.5) ($button-padding * .75);
+    font-size: 1rem;
+  }  
 }
+
 .btn-primary {
   color: set-color($theme-primary);
   background-color: $theme-primary;
