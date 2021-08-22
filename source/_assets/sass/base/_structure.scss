@@ -45,54 +45,54 @@ $columns: 16 !default;
 $marginbuffers: 5;
 @for $i from 0 through $marginbuffers {
   .m-#{$i} {
-    margin: $i * ($theme-font-size-base * .5);
+    margin: $i * ($theme-font-size-base * .5) !important;
   }
   .my-#{$i} {
-    margin-top: $i * ($theme-font-size-base * .5);
-    margin-bottom: $i * ($theme-font-size-base * .5);
+    margin-top: $i * ($theme-font-size-base * .5) !important;
+    margin-bottom: $i * ($theme-font-size-base * .5) !important;
   }
   .mx-#{$i} {
-    margin-right: $i * ($theme-font-size-base * .5);
-    margin-left: $i * ($theme-font-size-base * .5);
+    margin-right: $i * ($theme-font-size-base * .5) !important;
+    margin-left: $i * ($theme-font-size-base * .5) !important;
   }
   .mt-#{$i} {
-    margin-top: $i * ($theme-font-size-base * .5);
+    margin-top: $i * ($theme-font-size-base * .5) !important;
   }
   .mb-#{$i} {
-    margin-bottom: $i * ($theme-font-size-base * .5);
+    margin-bottom: $i * ($theme-font-size-base * .5) !important;
   }
   .ml-#{$i} {
-    margin-left: $i * ($theme-font-size-base * .5);
+    margin-left: $i * ($theme-font-size-base * .5) !important;
   }
   .mr-#{$i} {
-    margin-right: $i * ($theme-font-size-base * .5);
+    margin-right: $i * ($theme-font-size-base * .5) !important;
   }
 }
 
 $paddingbuffers: 5;
 @for $i from 0 through $paddingbuffers {
   .p-#{$i} {
-    padding: $i * ($theme-font-size-base * .5);
+    padding: $i * ($theme-font-size-base * .5) !important;
   }
   .py-#{$i} {
-    padding-top: $i * ($theme-font-size-base * .5);
-    padding-bottom: $i * ($theme-font-size-base * .5);
+    padding-top: $i * ($theme-font-size-base * .5) !important;
+    padding-bottom: $i * ($theme-font-size-base * .5) !important;
   }
   .px-#{$i} {
-    padding-right: $i * ($theme-font-size-base * .5);
-    padding-left: $i * ($theme-font-size-base * .5);
+    padding-right: $i * ($theme-font-size-base * .5) !important;
+    padding-left: $i * ($theme-font-size-base * .5) !important;
   }
   .pt-#{$i} {
-    padding-top: $i * ($theme-font-size-base * .5);
+    padding-top: $i * ($theme-font-size-base * .5) !important;
   }
   .pb-#{$i} {
-    padding-bottom: $i * ($theme-font-size-base * .5);
+    padding-bottom: $i * ($theme-font-size-base * .5) !important;
   }
   .pl-#{$i} {
-    padding-left: $i * ($theme-font-size-base * .5);
+    padding-left: $i * ($theme-font-size-base * .5) !important;
   }
   .pr-#{$i} {
-    padding-right: $i * ($theme-font-size-base * .5);
+    padding-right: $i * ($theme-font-size-base * .5) !important;
   }
 }
 

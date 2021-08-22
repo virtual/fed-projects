@@ -1,2 +1,7 @@
 @use "sass:math";
 $headingcountmax: 4;
+
+.type-constrained-width {
+  max-width: 600px;
+  margin: 0 auto;
+}

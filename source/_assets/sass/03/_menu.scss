@@ -3,6 +3,11 @@
   nav {
     a:not(.btn) {
       color: $color-grayish-violet;
+      font-weight: 700;
+      font-size: $theme-font-size-base * .9;
+      &:hover {
+        color: $color-very-dark-blue;
+      }
     }
   }
 }

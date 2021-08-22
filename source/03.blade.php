@@ -6,8 +6,10 @@
 <header class="header">
   <div class="container">
     <div class="menu-container">
-      <a href="https://www.figma.com/file/cvDAyecKzPNSQrwO1Dov4c/URL-Api-Design"><img src="../resources/03/logo.svg"
-          alt="Shortly" /></a>
+      <div class="menu-logo">
+        <h1><a class="logo" href="https://www.figma.com/file/cvDAyecKzPNSQrwO1Dov4c/URL-Api-Design"><img src="../resources/03/logo.svg"
+            alt="Shortly" /></a></h1>
+      </div>
       <nav>
         <ul class="list-unstyled list-inline">
           <li><a href="#">Features</a></li>
@@ -83,9 +85,9 @@
   <main class="main container py-5">
 
 
-    <h2 class="text-center mt-4 h2">Advanced Statistics</h2>
+    <h2 class="text-center mt-5 h2">Advanced Statistics</h2>
 
-    <p class="text-center">Track how your links are performing across the web with our
+    <p class="type-dimmed text-center type-constrained-width">Track how your links are performing across the web with our
       advanced statistics dashboard.</p>
 
     <section class="card-container">
@@ -167,7 +169,7 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
-      <div class="col-6">
+      <div class="col-6 social-block">
         <h3 class="sr-only">Social Media Links</h3>
         <ul class="mt-0 list-inline-block list-unstyled list-padded list-links">
           <li><a href="#"><img alt="facebook" src="../resources/03/icon-facebook.svg"></a></li>
@@ -187,6 +189,6 @@
 <link rel="stylesheet" href="{{ $page->baseUrl }}{{ mix('css/proj03.css', 'assets/build') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="{{ $page->baseUrl }}/resources/03/favicon-32x32.png">
 @endsection
