@@ -5,3 +5,12 @@ $headingcountmax: 4;
   max-width: 600px;
   margin: 0 auto;
 }
+
+::-moz-selection { 
+  color: $color-very-dark-violet;
+  background: $theme-primary;
+}
+::selection {
+  color: $color-very-dark-violet;
+  background: $theme-primary;
+}

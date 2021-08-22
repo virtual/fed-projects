@@ -10,4 +10,8 @@
       }
     }
   }
+  @media (min-width: $screen-md) {
+    padding-right: $gutter * 3;
+    padding-left: $gutter * 3;
+  }
 }
