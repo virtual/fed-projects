@@ -15,7 +15,9 @@ footer.footer {
 header.header {
   padding: 0;
   .container {
-    padding: $gutter;
+    @media (min-width: $screen-lg) {
+      padding: $gutter;
+    }
   }
 }
 .main-container {

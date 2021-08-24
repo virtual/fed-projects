@@ -43,7 +43,7 @@ let pristineDefaultConfig = {
   errorTextClass: 'text-help' 
 };
 window.onload = function () {
-
+  reportWindowSize();
   var form = document.getElementById("submitURL");
 
   // create the pristine instance
@@ -59,4 +59,31 @@ window.onload = function () {
       document.getElementById('ctaResults').classList.remove('d-none');
     }
   });
+
+
+  var menubutton = document.getElementById("menubutton");
+  var siteMenu = document.getElementById("siteMenu");
+
+  menubutton.addEventListener('click', function(e) {
+
+    if (siteMenu.getAttribute('aria-hidden') === "false") {
+      siteMenu.setAttribute("aria-hidden", "true");
+    } else {
+      siteMenu.setAttribute("aria-hidden", "false");
+    }
+
+  });
 };
+
+var mobilebreakpoint = 992;
+function reportWindowSize() {
+  var width = window.innerWidth;
+
+  if (width < mobilebreakpoint) {
+    siteMenu.setAttribute("aria-hidden", "true");
+  } else {
+    siteMenu.setAttribute("aria-hidden", "false");
+  }
+}
+
+window.onresize = reportWindowSize;

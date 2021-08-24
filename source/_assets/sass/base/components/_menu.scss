@@ -1,23 +1,61 @@
 @use "sass:math";
 .menu-container {
   @include flexbox();
-  @include flex-direction(row);
+  @include flex-direction(column);
   @include align-items(center);
+
+  @media (min-width: $screen-lg) {
+    @include flex-direction(row);
+  }
+
   h1 {
     margin: 0;
     line-height: 0;
-  }
+  } 
   .menu-logo {
-    padding-right: $gutter;
+    text-align: left;
+    padding: $gutter;
+    display: flex;
+    width: 100%;
+    @include justify-content(space-between);
+    @include align-items(center);
+    @media (min-width: $screen-lg) {
+      width: auto;
+    }
+    button {
+      width: auto;
+      background-color: transparent;
+
+      flex-grow: 0;
+      flex-shrink: 1;
+      @media (min-width: $screen-lg) {
+        display: none;
+      }
+    }
   }
   nav {
+    width: 100%;
     padding: 0 math.div($gutter, 2);
     @include flexbox();
-    @include flex-direction(row);
+    @include flex-direction(column);
     @include flex-grow(1);
-    @media (min-width: $screen-md) {
+    @media (min-width: $screen-lg) {
+      @include flex-direction(row);
       @include justify-content(space-between);
       @include align-items(center);
+    }
+    &[aria-hidden=true] {
+      display: none;
+    }
+    
+    ul {
+      margin: 0;
+      li a {
+        display: block;
+        @media (min-width: $screen-lg) {
+          display: inline-block;
+        }
+      }
     }
 
     a:not(.btn) {
