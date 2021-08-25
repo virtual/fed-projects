@@ -68,8 +68,10 @@ window.onload = function () {
 
     if (siteMenu.getAttribute('aria-hidden') === "false") {
       siteMenu.setAttribute("aria-hidden", "true");
+      menubutton.setAttribute("aria-expanded", "false");
     } else {
       siteMenu.setAttribute("aria-hidden", "false");
+      menubutton.setAttribute("aria-expanded", "true");
     }
 
   });
@@ -80,8 +82,10 @@ function reportWindowSize() {
   var width = window.innerWidth;
 
   if (width < mobilebreakpoint) {
+    menubutton.setAttribute("aria-expanded", "false");
     siteMenu.setAttribute("aria-hidden", "true");
   } else {
+    menubutton.setAttribute("aria-expanded", "true");
     siteMenu.setAttribute("aria-hidden", "false");
   }
 }

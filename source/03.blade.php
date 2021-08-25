@@ -9,12 +9,13 @@
       <div class="menu-logo">
         <h1><a class="logo" href="https://www.figma.com/file/cvDAyecKzPNSQrwO1Dov4c/URL-Api-Design"><img src="../resources/03/logo.svg"
             alt="Shortly" /></a></h1>
-        <button  id="menubutton" aria-expanded="false" aria-controls="siteMenu">Menu</button>    
+        <button aria-label="Menu" id="menubutton" aria-expanded="false" aria-controls="siteMenu"><img src="../resources/03/icon-menu.svg"
+          alt="Shortly" /></button>    
       </div>
       <nav id="siteMenu"
       role="menu"
       aria-labelledby="menubutton"
-      aria-hidden="false">
+      aria-hidden="true">
         <ul class="list-unstyled list-inline">
           <li><a href="#">Features</a></li>
           <li><a href="#">Pricing</a></li>
@@ -24,7 +25,7 @@
 
         <ul class="list-unstyled list-inline">
           <li><a href="#">Login</a></li>
-          <li><a class="btn btn-primary" href="#">Sign Up</a></li>
+          <li class="mobile-padded-link"><a class="btn btn-primary" href="#">Sign Up</a></li>
         </ul>
       </nav>
     </div>

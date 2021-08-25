@@ -3,33 +3,35 @@
   @include flexbox();
   @include flex-direction(column);
   @include align-items(center);
-
   @media (min-width: $screen-lg) {
     @include flex-direction(row);
   }
-
   h1 {
     margin: 0;
     line-height: 0;
   } 
   .menu-logo {
-    text-align: left;
-    padding: $gutter;
     display: flex;
     width: 100%;
+    padding: $gutter;
+    text-align: left;
     @include justify-content(space-between);
     @include align-items(center);
     @media (min-width: $screen-lg) {
       width: auto;
     }
     button {
-      width: auto;
-      background-color: transparent;
-
       flex-grow: 0;
       flex-shrink: 1;
+      width: auto;
+      background-color: transparent;
       @media (min-width: $screen-lg) {
         display: none;
+      }
+      &[aria-expanded=true] {
+        img {
+          filter: brightness(0) saturate(100%) invert(78%) sepia(90%) saturate(565%) hue-rotate(134deg) brightness(84%) contrast(90%);
+        }
       }
     }
   }
@@ -44,10 +46,17 @@
       @include justify-content(space-between);
       @include align-items(center);
     }
-    &[aria-hidden=true] {
-      display: none;
+    background-color: #fff;
+    @media (max-width: $screen-lg - 1px) {
+      height: auto;
+      visibility: visible;
+      opacity: 1;
+      transition: 20ms all ease-in;
+      &[aria-hidden=true] {
+        height: 0;
+        opacity: 0;
+      }
     }
-    
     ul {
       margin: 0;
       li a {
@@ -56,8 +65,17 @@
           display: inline-block;
         }
       }
+      li {
+        @media (max-width: $screen-lg - 1px) {
+          display: block;
+        }
+      }
+      li.mobile-padded-link {
+        @media (max-width: $screen-lg - 1px) {
+          margin-top: 20px;
+        }
+      }
     }
-
     a:not(.btn) {
       padding: math.div($theme-font-size-base, 2) $theme-font-size-base;
       color: $theme-body-text-color;
@@ -67,6 +85,5 @@
         text-decoration: underline;
       }
     }
-
   }
 }
