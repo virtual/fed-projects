@@ -56,7 +56,7 @@
     <div class="container">
       <form id="submitURL" class="theme-secondary p-3 width-100">
         <div class="form-group">
-        <input type="text" 
+        <input id="originalURL" type="text" 
         pattern="/^(https:|http:|www\.)\S*$/i"
         placeholder="Shorten a link here..." 
           required data-pristine-required-message="Link cannot be empty"
@@ -69,18 +69,13 @@
 
   <div class="container">
     <div id="ctaResults" class="cta-form-results d-none">
-      <table>
+      <table id="ctaTable">
         <thead><tr>
           <th>Original Link</th>  
           <th>Shortened Link</th>  
           <th>Action</th>  
         </tr></thead>
         <tbody>
-          <tr>
-            <td>https://subeta.net/users/Virtual</td>
-            <td><a href="#">https://fake.ly/sv</a></td>
-            <td><button type="submit" class="btn btn-primary btn-sm">Copy</td>
-          </tr> 
         </tbody>
       </table>
     </div>
