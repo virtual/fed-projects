@@ -1,59 +1,26 @@
 var Pristine = require('pristinejs');
 
-var app = {
-  changeScrollableOffset: function(px) {
-    // console.log('changeScrollableOffset', px)
-  },
-  toggleMenu: function(el) {
-    // if (el.classList.contains('show')) {
-    //   hideDropdownMenu(el)
-    // } else {
-    //   el.classList.add('show');
-    //   el.querySelector('button').setAttribute("aria-expanded", 'true');
-    // }
-  },
-  checkValid: function(el) {
-    console.log('valid?')
-  }
-}
-
-
-app.changeScrollableOffset(40);
-app.toggleMenu();
-
-// $(document).ready(function () {
-//   $('form').submit(function (e) { 
-//     e.preventDefault();
-//     app.checkValid();
-//   });
-// });
-
-
 
 // Build link
-
 /* <tr>
 <td>https://subeta.net/users/Virtual</td>
 <td><a href="#">https://fake.ly/sv</a></td>
 <td><button type="submit" class="btn btn-primary btn-sm">Copy</td>
 </tr>  */
-
 function buildRow(origLink) {
-  console.log('buildRow', origLink)
   var tbody = document.getElementById("ctaTable").getElementsByTagName('tbody')[0];
-  var rowData = {
-    'original': origLink, 
-    'shortened': createLink(origLink)
-  };
-  let row = tbody.insertRow(0);
-  for (key in rowData) {
-    let cell = row.insertCell();
-    let text = document.createTextNode(rowData[key]);
-    cell.appendChild(text);
-  }
   
+  let row = tbody.insertRow(0);
   let cell = row.insertCell();
-  cell.appendChild(buildCopy(rowData['shortened']));
+  let text = document.createTextNode(origLink);
+  cell.appendChild(text);
+  
+  let short = getShortenedLink(origLink);
+  let cell2 = row.insertCell();
+  cell2.appendChild(createLink(short));
+
+  let cell3 = row.insertCell();
+  cell3.appendChild(buildCopy(short));
 
 }
 
@@ -64,14 +31,33 @@ function buildCopy(link) {
   btn.type = "submit";
   btn.classList = "btn btn-primary btn-sm";
   btn.dataset.url = link;
+  btn.addEventListener("click", function (el) {
+    copyPath(link)
+  });
   return btn;
 }
 
+function copyPath(link) {
+  navigator.clipboard.writeText(link).then(function() {
+    // console.log('Async: Copying to clipboard was successful!', link);
+  }, function(err) {
+    console.error('Async: Could not copy text: ', err);
+  });
+}
+
 // Create shortened link
-function createLink(origLink) {
+function createLink(url) {
+  let a = document.createElement("a");
+  a.href = url;
+  a.innerHTML = url;
+  return a;
+}
+
+function getShortenedLink(origLink) {
   var short = origLink.substring(8,11);
   var randId = Math.random().toString(36).replace(/[^a-z]+/g, '').substr(0, 2);
-  return "https://www.fake.ly/" + short + randId;
+  let path = "https://www.fake.ly/" + short + randId;
+  return path;
 }
 
 
