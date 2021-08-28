@@ -69,7 +69,7 @@
 
   <div class="container">
     <div id="ctaResults" class="cta-form-results d-none">
-      <table id="ctaTable">
+      <table id="ctaTable" class="table-responsive-stack">
         <thead><tr>
           <th>Original Link</th>  
           <th>Shortened Link</th>  
@@ -87,7 +87,7 @@
 
     <h2 class="text-center mt-5 h2">Advanced Statistics</h2>
 
-    <p class="type-dimmed text-center type-constrained-width">Track how your links are performing across the web with our
+    <p class="lead type-dimmed text-center type-constrained-width">Track how your links are performing across the web with our
       advanced statistics dashboard.</p>
 
     <section class="card-container">
