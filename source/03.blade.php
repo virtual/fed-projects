@@ -14,14 +14,12 @@
       </div>
       <nav id="siteMenu"
       role="menu"
-      aria-labelledby="menubutton"
-      aria-hidden="true">
+      aria-labelledby="menubutton">
         <ul class="list-unstyled list-inline">
           <li><a href="#">Features</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Resources</a></li>
         </ul>
-
 
         <ul class="list-unstyled list-inline">
           <li><a href="#">Login</a></li>

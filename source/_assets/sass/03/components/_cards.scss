@@ -13,10 +13,9 @@
 .card {
   padding: $gutter * 3;
   padding-top: $gutter * 4;
-  // overflow: hidden;
   background: $color-white;
   position: relative;
-  color: $color-grayish-violet;
+  color: lighten($color-very-dark-blue, 20);
   margin-bottom: $gutter * 4;
   line-height: 1.7;
   border-radius: 8px;
