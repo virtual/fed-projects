@@ -7,9 +7,9 @@
   <div class="container">
     <div class="menu-container">
       <div class="menu-logo">
-        <h1><a class="logo" href="https://www.figma.com/file/cvDAyecKzPNSQrwO1Dov4c/URL-Api-Design"><img src="../resources/03/logo.svg"
+        <h1><a class="logo" href="https://www.figma.com/file/cvDAyecKzPNSQrwO1Dov4c/URL-Api-Design"><img height="33" width="121" src="../resources/03/logo.svg"
             alt="Shortly" /></a></h1>
-        <button aria-label="Menu" id="menubutton" aria-expanded="false" aria-controls="siteMenu"><img src="../resources/03/icon-menu.svg"
+        <button aria-label="Menu" id="menubutton" aria-expanded="false" aria-controls="siteMenu"><img height="19" width="26" src="../resources/03/icon-menu.svg"
           alt="Shortly" /></button>    
       </div>
       <nav id="siteMenu"
@@ -94,7 +94,7 @@
 
       <div class="card">
         <div class="card-image">
-          <img src="../resources/03/icon-brand-recognition.svg" alt="" />
+          <img height="40" width="40" src="../resources/03/icon-brand-recognition.svg" alt="an upward trending chart" />
         </div>
         <h3>Brand Recognition</h3>
 
@@ -105,7 +105,7 @@
 
       <div class="card">
         <div class="card-image">
-          <img src="../resources/03/icon-detailed-records.svg" alt="" />
+          <img height="40" width="40" src="../resources/03/icon-detailed-records.svg" alt="a closeup of a speedometer" />
         </div>
         <h3>Detailed Records</h3>
 
@@ -116,7 +116,7 @@
 
       <div class="card">
         <div class="card-image">
-          <img src="../resources/03/icon-fully-customizable.svg" alt="" />
+          <img height="48" width="48" src="../resources/03/icon-fully-customizable.svg" alt="paintbrushes" />
         </div>
         <h3>Fully Customizable</h3>
 
@@ -139,7 +139,7 @@
 
     <div class="row">
       <div class="col-6">
-        <div class="footer-logo"><a href="https://www.figma.com/file/cvDAyecKzPNSQrwO1Dov4c/URL-Api-Design"><img
+        <div class="footer-logo"><a href="https://www.figma.com/file/cvDAyecKzPNSQrwO1Dov4c/URL-Api-Design"><img height="33" width="121"
               src="../resources/03/logo.svg" alt="Shortly" /></a></div>
       </div>
       <div class="col-4">
@@ -172,10 +172,10 @@
       <div class="col-6 social-block">
         <h3 class="sr-only">Social Media Links</h3>
         <ul class="mt-0 list-inline-block list-unstyled list-padded list-links">
-          <li><a href="#"><img alt="facebook" src="../resources/03/icon-facebook.svg"></a></li>
-          <li><a href="#"><img alt="twitter" src="../resources/03/icon-twitter.svg"></a></li>
-          <li><a href="#"><img alt="pinterest" src="../resources/03/icon-pinterest.svg"></a></li>
-          <li><a href="#"><img alt="instagram" src="../resources/03/icon-instagram.svg"></a></li>
+          <li><a href="#"><img height="24" width="24" alt="facebook" src="../resources/03/icon-facebook.svg"></a></li>
+          <li><a href="#"><img height="20" width="24" alt="twitter" src="../resources/03/icon-twitter.svg"></a></li>
+          <li><a href="#"><img height="24" width="24" alt="pinterest" src="../resources/03/icon-pinterest.svg"></a></li>
+          <li><a href="#"><img height="24" width="24" alt="instagram" src="../resources/03/icon-instagram.svg"></a></li>
         </ul>
       </div>
     </div>

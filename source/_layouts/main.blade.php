@@ -6,10 +6,10 @@
         <link rel="canonical" href="{{ $page->getUrl() }}">
         <meta name="description" content="{{ $page->description }}">
 
-        <script defer src="{{ $page->baseUrl }}{{ mix('js/main.js', 'assets/build') }}"></script>
         @yield('head')
-    </head>
-    <body class="text-gray-900 font-sans antialiased">
+      </head>
+      <body class="text-gray-900 font-sans antialiased">
         @yield('body')
-    </body>
+        <script defer src="{{ $page->baseUrl }}{{ mix('js/main.js', 'assets/build') }}"></script>
+      </body>
 </html>
