@@ -189,7 +189,8 @@
 <link rel="stylesheet" href="{{ $page->baseUrl }}{{ mix('css/proj03.css', 'assets/build') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap" rel="stylesheet">
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
 <link rel="icon" type="image/png" href="{{ $page->baseUrl }}/resources/03/favicon-32x32.png">
 <meta name="theme-color" content="#2acfcf">
 @endsection
