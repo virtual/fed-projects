@@ -32,7 +32,13 @@ function buildCopy(link) {
   btn.classList = "btn btn-primary btn-sm";
   btn.dataset.url = link;
   btn.addEventListener("click", function (el) {
-    copyPath(link)
+    copyPath(link);
+    btn.innerHTML = "Copied!";
+    btn.classList = "btn btn-primary btn-sm btn-active";
+    setTimeout(function(){ 
+      btn.innerHTML = "Copy";
+      btn.classList = "btn btn-primary btn-sm";
+     }, 3000);
   });
   return btn;
 }

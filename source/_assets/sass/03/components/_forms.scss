@@ -74,6 +74,7 @@
         background-color: $color-white;
         button {
           width: 100%;
+          min-width: 100px;
           border-radius: 4px;
         }
       }

@@ -10,7 +10,7 @@
         <h1><a class="logo" href="https://www.figma.com/file/cvDAyecKzPNSQrwO1Dov4c/URL-Api-Design"><img height="33" width="121" src="../resources/03/logo.svg"
             alt="Shortly" /></a></h1>
         <button aria-label="Menu" id="menubutton" aria-expanded="false" aria-controls="siteMenu"><img height="19" width="26" src="../resources/03/icon-menu.svg"
-          alt="Shortly" /></button>    
+          alt="Menu" /></button>    
       </div>
       <nav id="siteMenu"
       role="menu"

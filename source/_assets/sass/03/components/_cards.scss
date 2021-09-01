@@ -19,6 +19,11 @@
   margin-bottom: $gutter * 4;
   line-height: 1.7;
   border-radius: 8px;
+  @media (max-width: $screen-md - 1px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
   h3 {
     margin-top: $theme-font-size-base * 1;
     margin-bottom: $theme-font-size-base * 0.5;

@@ -5,3 +5,7 @@
   padding-right: $button-padding * 4;
   font-weight: 700;
 }
+.btn.btn-active {
+  color: $color-white;
+  background-color: $color-dark-violet;
+}
