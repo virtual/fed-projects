@@ -1,0 +1,27 @@
+@use "sass:math";
+body {
+  background-color: $theme-secondary;
+}
+
+header.header, 
+.sub-footer-container,
+.main-container,
+footer.footer {
+  @include flexbox();
+  width: 100%;
+  padding: $gutter;
+  @include flex-direction(column);
+}
+header.header {
+  padding: 0;
+  .container {
+    @media (min-width: $screen-lg) {
+      padding: $gutter;
+    }
+  }
+}
+.main-container {
+  @include flex-grow(1);
+}
+
+$columns: 24;

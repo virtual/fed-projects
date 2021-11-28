@@ -1,30 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="canonical" href="https://virtual.github.io/fed-projects/03">
-        <meta name="description" content="Mew mew">
+@extends('_layouts.main')
 
-        <title>URL Shortening API</title>
-<link rel="stylesheet" href="https://virtual.github.io/fed-projects/assets/build/css/proj03.css?id=3edcbe5ee54f13ba430c">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload"
-      as="style"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" />
-<link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      media="print" onload="this.media='all'" />
-<noscript>
-<link rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" />
-</noscript>
-<link rel="icon" type="image/png" href="https://virtual.github.io/fed-projects/resources/03/favicon-32x32.png">
-<meta name="theme-color" content="#2acfcf">
-      </head>
-      <body class="text-gray-900 font-sans antialiased">
-        
+@section('body')
+
 
 <header class="header">
   <div class="container">
@@ -203,6 +180,23 @@
   </div>
 </footer>
 
-        <script defer src="https://virtual.github.io/fed-projects/assets/build/js/main.js?id=b59963c1c987b14d8478"></script>
-      </body>
-</html>
+@endsection
+
+@section('head')
+<title>Distant Life</title>
+<link rel="stylesheet" href="{{ $page->baseUrl }}{{ mix('css/proj04.css', 'assets/build') }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      media="print" onload="this.media='all'" />
+<noscript>
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" />
+</noscript>
+<link rel="icon" type="image/png" href="{{ $page->baseUrl }}/resources/03/favicon-32x32.png">
+<meta name="theme-color" content="#2acfcf">
+@endsection

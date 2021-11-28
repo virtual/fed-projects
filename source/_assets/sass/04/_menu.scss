@@ -1,0 +1,19 @@
+@use "sass:math";
+.menu-container {
+  background-color: $theme-primary;
+  nav {
+    background-color: transparent;
+    a:not(.btn) {
+      color: $color-white;
+      font-weight: 700;
+      font-size: $theme-font-size-base * .9;
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+  @media (min-width: $screen-md) {
+    padding-right: $gutter * 3;
+    padding-left: $gutter * 3;
+  }
+}

@@ -1,0 +1,35 @@
+$themeColours: (
+  "primary": $theme-primary,
+  "secondary": $theme-secondary,
+  "red": $alert-danger
+);
+body {
+  background-color: $theme-secondary;
+}
+header.header {
+  background-color: $theme-secondary;
+}
+footer.footer {
+  color: $color-white;
+  background-color: $theme-primary;
+}
+
+
+.sub-footer-container,
+.cta-form .theme-secondary {
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
+.sub-footer-container {
+  background-image: url('../../../resources/03/bg-boost-mobile.svg');
+  @media (min-width: $screen-md) {
+    background-image: url('../../../resources/03/bg-boost-desktop.svg');
+  }
+}
+.cta-form .theme-secondary {
+  background-image: url('../../../resources/03/bg-shorten-mobile.svg');
+  @media (min-width: $screen-md) {
+    background-image: url('../../../resources/03/bg-shorten-desktop.svg');
+  }
+}

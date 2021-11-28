@@ -2,20 +2,25 @@
     "private": true,
     "scripts": {
         "dev": "mix",
-        "watch": "mix watch",
+        "watch3": "mix watch",
+        "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
         "staging": "NODE_ENV=staging mix",
         "prod": "mix --production",
-        "build": "./vendor/bin/jigsaw build"
+        "build": "./vendor/bin/jigsaw build",
+        "start": "webpack serve --open"
     },
     "devDependencies": {
-        "laravel-mix": "^6.0.10",
-        "laravel-mix-jigsaw": "^1.5.0",
+        "laravel-mix": "^6.0.39",
+        "laravel-mix-jigsaw": "^2.0.0",
         "postcss": "^8.2.4",
         "postcss-import": "^14.0.0",
         "sass": "^1.35.2",
-        "sass-loader": "^12.1.0"
+        "sass-loader": "^12.1.0",
+        "webpack": "^5.64.4"
     },
     "dependencies": {
+        "cross-env": "^7.0.3",
         "mix": "^0.0.1",
         "pristinejs": "^0.1.9"
     }

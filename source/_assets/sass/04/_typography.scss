@@ -1,0 +1,16 @@
+@use "sass:math";
+$headingcountmax: 4;
+
+.type-constrained-width {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+::-moz-selection { 
+  color: $color-white;
+  background: $theme-primary;
+}
+::selection {
+  color: $color-white;
+  background: $theme-primary;
+}

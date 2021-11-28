@@ -12,6 +12,7 @@ mix.jigsaw()
     .sass('source/_assets/sass/proj01.scss', 'css/proj01.css')
     .sass('source/_assets/sass/proj02.scss', 'css/proj02.css')
     .sass('source/_assets/sass/proj03.scss', 'css/proj03.css')
+    .sass('source/_assets/sass/proj04.scss', 'css/proj04.css')
     .options({
         processCssUrls: false,
     })
@@ -21,4 +22,5 @@ mix.jigsaw()
   //       grid: false
   //   })
   // ])
+  
     .version();
