@@ -1,7 +1,24 @@
 # Jigsaw dev environment
 
-- `npm run watch` to develop
+- `npm run watch-poll` to develop
+- go to `http://fedprojects.test/`
 - `npm run prod` prior to commit
+
+
+
+# Vagrant env
+
+```
+...
+folders:
+    - map: ~/code/fed-projects
+      to: /home/vagrant/code/fed-projects
+
+sites:
+    - map: fedprojects.test
+      to: /home/vagrant/code/fed-projects/build_local
+...
+```
 
 # Jigsaw Blog Starter Template
 

@@ -1,14 +1,12 @@
-.btn {
+.btn, button {
   width: auto;
   display: inline-block;
   padding-left: $button-padding * 4;
   padding-right: $button-padding * 4;
   font-weight: 700;
+  color: $color-white;
+  background-color: $theme-primary;
   &:hover, &:focus {
     color: $theme-link-color;
   }
-}
-.btn.btn-active {
-  color: $color-white;
-  background-color: $theme-primary;
 }

@@ -1,41 +1,5 @@
 @use "sass:math";
-.cta-form {
-  width: 100%;
-  .cta-form-background {
-    background: linear-gradient(to bottom, $color-white, $color-white 50%, $color-gray-light 50%);
-  }
-  form {
-    border-radius: $theme-font-size-base;
-    @include flexbox();
-    @include flex-direction(column);
-    @include align-items(stretch);
-    @media (min-width: $screen-md) {
-      @include flex-direction(row);
-    }
-    input,
-    button {
-      margin: $theme-font-size-base;
-      border-radius: math.div($theme-font-size-base, 4);
-    }
-    .form-group {
-      @include flexbox;
-      flex-grow: 1; 
-    }
-    input[type="text"] {
-      width: 100%;
 
-      padding: $theme-font-size-base;
-    }
-  }
-  .container {
-    padding-right: $gutter;
-    padding-left: $gutter;
-    @media (min-width: $screen-xl) {
-      padding-right: 0;
-      padding-left: 0;
-    }
-  }
-}
 .form-group {
   position: relative;
   &.has-danger {
@@ -58,7 +22,7 @@
   }
 }
 
-.cta-form-results {
+
   table {
     width: 100%;
     margin-top: $gutter * 2;
@@ -83,4 +47,33 @@
       border-top: $theme-font-size-base solid $color-gray-light;
     }
   }
+
+
+form.centered {
+  @include flexbox();
+  @include justify-content(space-around);
+  @include flex-direction(column);
+  @include align-items(center);
+  .form-group {
+    margin: 0 0 ($gutter) 0;
+    width: 100%;
+    @media (min-width: $screen-md) {
+      max-width: 350px;
+    }
+  }
+  label, input[type=text], input[type=password] {
+    width: 100%;
+  }
+  label {
+    color: $theme-body-text-color;
+    display: block;
+  }
+  button {
+    margin-top: $gutter;
+  }
+ 
+}
+input {
+  border-radius: $input-border-radius;
+  background-color: rgba($color-white, .8);
 }

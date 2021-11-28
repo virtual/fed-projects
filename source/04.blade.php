@@ -80,6 +80,31 @@
 
     </section>
 
+    <section class="my-4">
+
+      <form class="mx-auto centered">
+        
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input id="email" name="email" type="text" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" />
+          </div>
+          <div class="form-group">
+            <label for="confirmation">Retype Password</label>
+            <input id="confirmation" name="confirmation" type="password" />
+          </div>
+        
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
   </main>
 </div>
 <div class="sub-footer-container theme-inversed">

@@ -8,3 +8,7 @@ input {
 form {
   width: 100%;
 }
+label {
+  font-size: $theme-label-size-base;
+  text-transform: $theme-label-text-transform;
+}

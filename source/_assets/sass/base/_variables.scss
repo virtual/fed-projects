@@ -36,6 +36,8 @@ $theme-header-font-family: $theme-font-family !default;
 $theme-body-font-weight: 400 !default;
 $theme-header-font-weight: 700 !default;
 
+$theme-label-size-base: 16px !default;
+$theme-label-text-transform: uppercase !default;
 
 @function set-color($color) {
   @if (lightness($color) > 40) {
