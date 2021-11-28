@@ -1,7 +1,8 @@
 $themeColours: (
   "primary": $theme-primary,
   "secondary": $theme-secondary,
-  "red": $alert-danger
+  "red": $alert-danger,
+  "yellow": $color-yellow
 );
 body {
   background-color: $theme-secondary;
@@ -14,22 +15,11 @@ footer.footer {
   background-color: $theme-primary;
 }
 
+a {
+  color: $theme-link-color;
+}
 
-.sub-footer-container,
-.cta-form .theme-secondary {
-  background-repeat: repeat;
-  background-position: center;
-  background-size: cover;
-}
+
 .sub-footer-container {
-  background-image: url('../../../resources/03/bg-boost-mobile.svg');
-  @media (min-width: $screen-md) {
-    background-image: url('../../../resources/03/bg-boost-desktop.svg');
-  }
-}
-.cta-form .theme-secondary {
-  background-image: url('../../../resources/03/bg-shorten-mobile.svg');
-  @media (min-width: $screen-md) {
-    background-image: url('../../../resources/03/bg-shorten-desktop.svg');
-  }
+  background-color:  $theme-secondary;
 }

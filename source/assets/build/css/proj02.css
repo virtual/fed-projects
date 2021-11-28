@@ -735,22 +735,22 @@ div[class^=col-] {
 }
 
 .color-primary {
-  color: #45d3d3;
+  color: #45d3d3 !important;
 }
 
 .color-secondary {
-  color: #ea5353;
+  color: #ea5353 !important;
 }
 
 .color-orange {
-  color: #fcaf4a;
+  color: #fcaf4a !important;
 }
 
 .color-blue {
-  color: #549ef2;
+  color: #549ef2 !important;
 }
 
-.theme-inversed h1, .theme-inversed h2, .theme-inversed h3, .theme-inversed h4, .theme-inversed h5, .theme-inversed h6 {
+.theme-inversed h1, .theme-inversed h2, .theme-inversed h3, .theme-inversed h4, .theme-inversed h5, .theme-inversed h6, .theme-inversed p {
   color: #fff;
 }
 .theme-inversed a:not(.btn) {

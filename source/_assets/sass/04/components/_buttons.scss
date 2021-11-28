@@ -4,6 +4,9 @@
   padding-left: $button-padding * 4;
   padding-right: $button-padding * 4;
   font-weight: 700;
+  &:hover, &:focus {
+    color: $theme-link-color;
+  }
 }
 .btn.btn-active {
   color: $color-white;

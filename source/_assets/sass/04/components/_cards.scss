@@ -1,3 +1,4 @@
+@use "sass:math";
 .card-container {
   margin: ($gutter * 4) 0 ($gutter * 2) 0;
   background: linear-gradient(to right, transparent 0 49%, $theme-primary 49% 51%, transparent 51%);
@@ -19,12 +20,15 @@
   margin-bottom: $gutter * 4;
   line-height: 1.7;
   border-radius: 8px;
+  flex-basis: calc(100% / 3);
   @media (max-width: $screen-md - 1px) {
+    flex-basis: 100%;
     &:last-child {
       margin-bottom: 0;
     }
   }
   h3 {
+    color: $theme-primary;
     margin-top: $theme-font-size-base * 1;
     margin-bottom: $theme-font-size-base * 0.5;
   }
@@ -37,9 +41,8 @@
     padding: $theme-font-size-base * 1.25;
     border-radius: 999px;
     line-height: 0;
-    img {
-      width: 40px;
-      height: auto;
+    .far, .fas, .fal {
+      color: $color-yellow;
     }
   }
 }

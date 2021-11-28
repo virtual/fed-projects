@@ -5,7 +5,7 @@
     background-color: transparent;
     a:not(.btn) {
       color: $color-white;
-      font-weight: 700;
+      font-weight: 400;
       font-size: $theme-font-size-base * .9;
       &:hover {
         color: $color-white;
@@ -15,5 +15,16 @@
   @media (min-width: $screen-md) {
     padding-right: $gutter * 3;
     padding-left: $gutter * 3;
+  }
+  .menu-logo {
+    padding: 15px $gutter;
+    button {
+      padding: 4px;
+      background-color: transparent;
+      color: $color-white;
+      &[aria-expanded=true] {
+        color: $color-yellow;
+      }
+    }
   }
 }

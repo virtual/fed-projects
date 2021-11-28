@@ -37,14 +37,15 @@ $color-gray-dark: #050517;
 $color-blue: #247BA0;
 $color-blue-light: #C4E0F9;
 $color-green: #00A676;
+$color-yellow: #FFFD82;
 $color-berry: #922D50;
 $color-white: #fff;  
 
 // Alert https://colors.eva.design/
-$alert-success: #4FB54B !default;
-$alert-info: #4B81ED !default;
-$alert-warning: #D39F35 !default;
-$alert-danger: #C04145 !default;
+$alert-success: #5DDB6D !default;
+$alert-info: #3BBDEE !default;
+$alert-warning: #EDDE43 !default;
+$alert-danger: #E48850 !default;
 
 $theme-primary: $color-gray-dark;
 $theme-secondary: $color-blue; 
@@ -53,6 +54,7 @@ $theme-font-size-base: 18px;
 $theme-header-text-color: $color-white;
 $theme-body-text-color: $theme-header-text-color;
 // $theme-font-line-height: $theme-font-size-base * 1.4;
-$theme-font-family: 'Poppins', sans-serif;
+$theme-font-family: 'Karla', sans-serif !default;
 $theme-header-font-family: $theme-font-family;
 $theme-body-font-weight: 400;
+$theme-link-color: $color-blue-light;

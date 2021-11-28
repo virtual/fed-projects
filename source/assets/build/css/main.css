@@ -721,14 +721,14 @@ div[class^=col-] {
 }
 
 .color-primary {
-  color: #a71068;
+  color: #a71068 !important;
 }
 
 .color-secondary {
-  color: #f19d2d;
+  color: #f19d2d !important;
 }
 
-.theme-inversed h1, .theme-inversed h2, .theme-inversed h3, .theme-inversed h4, .theme-inversed h5, .theme-inversed h6 {
+.theme-inversed h1, .theme-inversed h2, .theme-inversed h3, .theme-inversed h4, .theme-inversed h5, .theme-inversed h6, .theme-inversed p {
   color: #fff;
 }
 .theme-inversed a:not(.btn) {

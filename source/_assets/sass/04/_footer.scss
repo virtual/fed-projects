@@ -1,39 +1,9 @@
 @use "sass:math";
-footer.footer {
-  a {
-    img {
-    filter: brightness(0) saturate(100%) invert(100%) sepia(14%) saturate(0%) hue-rotate(79deg) brightness(101%)
-      contrast(101%);
-    }
+footer.footer.theme-inversed {
+  p a {
+    color: $theme-link-color;
     &:hover, &:focus, &:active {
-      img {
-        filter: brightness(0) saturate(100%) invert(78%) sepia(90%) saturate(565%) hue-rotate(134deg) brightness(84%) contrast(90%);
-      }
-    }
-  }
-  .footer-link-list {
-    a {
-      display: inline-block;
-      padding: math.div($theme-font-size-base, 4) 0;
-      color: $color-gray;
       text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-  a {
-    &:hover, &:focus, &:active {
-      color: $theme-primary;
-    }
-  }
-  h3 {
-    margin-bottom: $theme-font-size-base;
-    font-size: $theme-font-size-base * 1;
-  }
-  @media (min-width: $screen-md) {
-    .social-block {
-      margin-top: -4px;
     }
   }
 }

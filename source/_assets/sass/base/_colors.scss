@@ -11,11 +11,11 @@ $themeColours: (
 }
 @each $themeColour, $i in $themeColours {
   .color-#{$themeColour} {
-    color: $i;
+    color: $i !important;
   }
 }
 .theme-inversed {
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2, h3, h4, h5, h6, p {
     color: $color-white;
   }
   a:not(.btn) {

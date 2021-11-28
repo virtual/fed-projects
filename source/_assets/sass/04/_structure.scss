@@ -16,7 +16,7 @@ header.header {
   padding: 0;
   .container {
     @media (min-width: $screen-lg) {
-      padding: $gutter;
+      padding: 0;
     }
   }
 }
