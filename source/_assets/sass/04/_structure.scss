@@ -25,3 +25,58 @@ header.header {
 }
 
 $columns: 24;
+
+.layout-secondary {
+  @include flexbox();
+  @include flex-direction(column);
+  width: 100%;
+  .layout-secondary-main, 
+  .layout-secondary-aside {
+    @include flex-grow(1);
+    padding: $gutter * 2;
+  }
+  .layout-secondary-main {
+    order: 1;
+    background-color: $theme-secondary;
+  }
+  .layout-secondary-aside {
+    order: 2;
+    background-color: rgba($theme-primary, .5);
+  }
+  @media (min-width: $screen-md) {
+    @include flex-direction(row);
+    .layout-secondary-main {
+      order: 2;
+    }
+    .layout-secondary-aside {
+      order: 1;
+      @include flex-basis(300px);
+      @include flex-grow(0);
+    }
+  }
+  @media (min-width: $screen-lg) {
+    .layout-secondary-aside {
+      @include flex-basis(400px);
+    }
+  }
+
+  @media (min-width: $screen-xl) {
+    .layout-secondary-main, 
+    .layout-secondary-aside {
+      padding: $gutter * 3;
+    }
+    .layout-secondary-main {
+      > main {
+        width: 860px;
+      }
+    }
+    .layout-secondary-aside {
+      @include flexbox();
+      @include flex-basis(30vw);
+      @include justify-content(flex-end);
+      > aside {
+        width: 400px;
+      }
+    }
+  }
+}

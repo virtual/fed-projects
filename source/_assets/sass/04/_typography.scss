@@ -14,3 +14,14 @@ $headingcountmax: 4;
   color: $color-white;
   background: $theme-primary;
 }
+
+.layout-secondary-aside {
+  h3 {
+    margin-top: $gutter;
+    margin-bottom: 0;
+    font-size: 18px;
+  }
+  > aside > *:first-child {
+    margin-top: 0;
+  }
+}

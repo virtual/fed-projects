@@ -106,7 +106,51 @@
     </section>
 
   </main>
+
+  
+
 </div>
+
+{{-- secondary pages --}}
+<div class="layout-secondary">
+  <div class="layout-secondary-main theme-inversed">
+    <main>
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol>
+          <li><a href="#">
+            <span class="fal fa-home-alt"></span>
+            <span class="sr-only">home</span>  
+          </a><meta property="position" content="1"></li>
+          <li><a class="active" aria-current="page" href="#">Training</a><meta property="position" content="2"></li>
+        </ol>
+      </nav>
+      <p>things</p>
+    </main>
+  </div>
+  <div class="layout-secondary-aside theme-inversed">
+    <aside>
+      <h3>Unnamed Pet</h3>
+      <dl class="list-stats">
+        <dt>
+          <span class="fal fa-star"></span>
+          <span class="sr-only">star</span></dt>
+        <dd>10 words learned</dd>
+      </dl>
+      <dl class="list-stats">
+        <dt>
+          <span class="fal fa-coins"></span>
+          <span class="sr-only">coins</span></dt>
+        <dd>$13.00</dd>
+      </dl>
+  <h3>Latest Notifications:</h3>
+      <ul>
+    <li>Badge: Grocery Run</li>
+  </ul>
+
+    </aside>
+  </div>
+</div>
+
 <div class="sub-footer-container theme-inversed">
   <aside class="container text-center py-3">
   <p class="h1 color-yellow">

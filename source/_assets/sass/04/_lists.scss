@@ -1,0 +1,10 @@
+.list-stats {
+  @include flexbox();
+  @include justify-content(flex-start);
+  dt { 
+    @include flex-basis(1rem);
+  }
+  dd { 
+    margin-left: $gutter;
+  }
+}
