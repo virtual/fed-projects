@@ -264,9 +264,69 @@
         <a href="#" class="btn">Continue</a>
       </p>
     </main>
+    {{-- training list --}}
+    <main>
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol>
+          <li><a href="#">
+              <span class="fal fa-home-alt"></span>
+              <span class="sr-only">home</span>
+            </a>
+            <meta property="position" content="1">
+          </li>
+          <li><a class="active" aria-current="page" href="#">Learn it</a>
+            <meta property="position" content="2">
+          </li>
+        </ol>
+      </nav>
+      <div class="secondary-main">
+
+        <header>
+          <h1>Training</h1>
+        </header>
+ 
+        <table class="table-responsive-stack">
+          <thead>
+            <tr>
+              <th class="table-icon">
+                <span class="fal fa-check-circle"></span>
+                <span class="sr-only">complete</span>
+              </th>
+              <th>Word Set</th>
+              <th>Learned</th>
+              <th><span class="sr-only">Icon</span></th>
+           </tr>
+          </thead>
+          <tbody>
+             <tr>
+                <td class="table-icon">
+                  <span class="fal fa-check-circle"></span>
+                  <span class="sr-only">complete</span>
+                </td>
+                <td><a href="#">Grocery Run</a></td>
+                <td>15/15</td>
+                <td><img src="../resources/04/sets/004-vegetables2.png" alt="vegetables"></td>
+             </tr>
+             <tr>
+                <td class="table-icon">
+                  <span class="fal fa-circle"></span>
+                  <span class="sr-only">incomplete</span>
+                </td>
+                <td><a href="#">Travel Time</a></td>
+                <td>0/15</td>
+                <td><img src="../resources/04/sets/016-pickup1.png" alt="pickup"></td>
+             </tr>
+          </tbody>
+       </table>
+  
+    </main>
   </div>
   <div class="layout-secondary-aside theme-inversed">
     <aside>
+      <p class="text-center my-0 pet-box pet-hidden">
+        <img width="200" height="200" src="../resources/04/pets/pet-wolf.png"
+        alt="wolf" />
+      </p>
       <h3>Unnamed Pet</h3>
       <p class="text-small-caps mb-0">Level 2</p>
       <div class="progressbar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
@@ -297,7 +357,7 @@
   </div>
 </div>
 
-<div class="sub-footer-container theme-inversed">
+<div class="sub-footer-container theme-inversed d-none">
   <aside class="container text-center py-3">
     <p class="h1 color-yellow">
       <span class="fal fa-cat-space"></span>

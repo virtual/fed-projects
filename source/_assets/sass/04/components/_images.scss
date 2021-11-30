@@ -1,0 +1,15 @@
+.pet-box {
+  border: 1px solid $color-blue-light;
+  background-color: rgba($color-blue-light, .3);
+}
+.pet-hidden {
+  img {
+    filter: brightness(0) saturate(100%) invert(97%) sepia(83%) saturate(6718%) hue-rotate(145deg) brightness(108%) contrast(104%);
+    opacity: .3;
+  }
+}
+.layout-secondary-aside {
+  .pet-box {
+    max-width: 125px;
+  }
+}

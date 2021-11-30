@@ -9,7 +9,10 @@ thead, tbody {
     color: $color-white;
     text-align: left;
     &.table-icon {
-      width: 50px;
+      @media (min-width: $screen-md) {
+        width: 50px;
+        text-align: center;
+      }
     }
   }
 }
@@ -23,6 +26,7 @@ tbody {
   tr {
     td {
       background-color: rgba($theme-primary, 0.05);
+      
     }
   }
   tr:nth-child(2n + 1) {
@@ -54,6 +58,16 @@ tbody {
       @include flexbox();
       @include flex-direction(column);
       width: 100%;
+    }
+  }
+}
+
+.secondary-main {
+  .table-responsive-stack {
+    td a {
+      &:hover, &:focus {
+        color: $color-yellow;
+      }
     }
   }
 }
