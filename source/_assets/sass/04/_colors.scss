@@ -18,7 +18,13 @@ footer.footer {
 a {
   color: $theme-link-color;
 }
-
+.theme-inversed {
+  a:not(.btn) {
+    &:hover, &:active, &:focus {
+      color: $color-yellow;
+    }
+  }
+}
 
 .sub-footer-container {
   background-color:  $theme-secondary;

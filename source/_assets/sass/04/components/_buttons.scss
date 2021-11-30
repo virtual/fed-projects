@@ -11,8 +11,8 @@
   @media (min-width: $screen-sm) {
     width: auto;
   }
-  &:hover, &:focus {
-    color: $theme-link-color;
+  &:hover, &:focus, &:active {
+    color: $color-yellow;
   }
   &.btn-red {
     background-color: $color-berry;
@@ -23,7 +23,6 @@
   width: 50%;
   border: 4px solid $theme-primary;
   &:hover, &:focus, &:active {
-    color: $theme-link-color;
     border-color: rgba($theme-secondary, .5);
   }
   &.btn-success {
