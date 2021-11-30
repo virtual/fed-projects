@@ -23,30 +23,6 @@
 }
 
 
-  table {
-    width: 100%;
-    margin-top: $gutter * 2;
-    margin-bottom: $gutter * 2;
-  }
-  thead {
-    @extend .sr-only;
-  }
-  tbody {
-    tr {
-      td {
-        padding: $theme-font-size-base ($theme-font-size-base * 2);
-        background-color: $color-white;
-        button {
-          width: 100%;
-          min-width: 100px;
-          border-radius: 4px;
-        }
-      }
-    }
-    tr + tr {
-      border-top: $theme-font-size-base solid $color-gray-light;
-    }
-  }
 
 
 form.centered {
@@ -96,15 +72,20 @@ input {
   margin-right: $gutter * -0.5;
   margin-left: $gutter * -0.5;
   .btn, .btn-radio {
-    @include flex-basis(calc(50% - #{$gutter} * 1));
+    @include flex-basis(calc(100% - #{$gutter} * 1));
     margin-bottom: $gutter;
     margin-right: $gutter * 0.5;
     margin-left: $gutter * 0.5;
-    min-height: 110px;
+    min-height: 60px;
 
     @include flexbox();
     @include align-items(center);
     @include justify-content(center);
     @include flex-direction(column);
+    
+    @media (min-width: $screen-md) {
+      @include flex-basis(calc(50% - #{$gutter} * 1)); 
+      min-height: 110px;
+    }
   }
 }

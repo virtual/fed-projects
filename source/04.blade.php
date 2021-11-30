@@ -171,6 +171,99 @@
       </div>
 
     </main>
+    {{-- training recap --}}
+    <main>
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol>
+          <li><a href="#">
+              <span class="fal fa-home-alt"></span>
+              <span class="sr-only">home</span>
+            </a>
+            <meta property="position" content="1">
+          </li>
+          <li><a class="active" aria-current="page" href="#">Learn it</a>
+            <meta property="position" content="2">
+          </li>
+        </ol>
+      </nav>
+      <div class="secondary-main">
+
+        <header>
+          <h1>Lesson complete</h1>
+          <p>13/15 correct</p>
+        </header>
+ 
+        <table class="table-responsive-stack">
+          <thead>
+            <tr>
+              <th class="table-icon"><span class="fal fa-star"></span>
+                <span class="sr-only">star</span></th>
+              <th>English</th>
+              <th dir="rtl">עברית</th>
+           </tr>
+          </thead>
+          <tbody>
+             <tr>
+                <td class="table-icon">
+                  <span class="fal fa-check"></span>
+                  <span class="sr-only">correct</span>
+                </td>
+                <td>Text</td>
+                <td>Text</td>
+             </tr>
+             <tr>
+                <td class="table-icon">
+                  <span class="fal fa-check"></span>
+                  <span class="sr-only">correct</span>
+                </td>
+                <td>Text</td>
+                <td>Text</td>
+             </tr>
+             <tr>
+                <td class="table-icon">
+                  <span class="fal fa-times"></span>
+                  <span class="sr-only">incorrect</span>
+                </td>
+                <td>Text</td>
+                <td>Text</td>
+             </tr>
+             <tr>
+                <td class="table-icon">
+                  <span class="fal fa-check"></span>
+                  <span class="sr-only">correct</span>
+                </td>
+                <td>Text</td>
+                <td>Text</td>
+             </tr>
+          </tbody>
+       </table>
+
+       <p>You earned:</p>
+       <dl class="list-stats">
+        <dt>
+          <span class="fal fa-star"></span>
+          <span class="sr-only">star</span>
+        </dt>
+        <dd>10 words learned</dd>
+      </dl>
+      <dl class="list-stats">
+        <dt>
+          <span class="fal fa-coins"></span>
+          <span class="sr-only">coins</span>
+        </dt>
+        <dd>$13.00</dd>
+      </dl>
+      <dl class="list-stats">
+        <dt>
+          <span class="fal fa-badge"></span>
+          <span class="sr-only">badge</span>
+        </dt>
+        <dd>Badge: Grocery Run</dd>
+      </dl>
+      <p class="text-center">
+        <a href="#" class="btn">Continue</a>
+      </p>
+    </main>
   </div>
   <div class="layout-secondary-aside theme-inversed">
     <aside>
@@ -230,11 +323,11 @@
 <link rel="stylesheet" href="{{ $page->baseUrl }}{{ mix('css/proj04.css', 'assets/build') }}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" />
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" media="print"
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Noto+Sans+Hebrew:wght@400;700&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Noto+Sans+Hebrew:wght@400;700&display=swap" media="print"
   onload="this.media='all'" />
 <noscript>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Noto+Sans+Hebrew:wght@400;700&display=swap" />
 </noscript>
 <link rel="icon" type="image/png" href="{{ $page->baseUrl }}/resources/04/favicon.png">
 <meta name="theme-color" content="#2acfcf">

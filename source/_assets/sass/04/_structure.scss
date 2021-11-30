@@ -38,6 +38,11 @@ $columns: 24;
   .layout-secondary-main {
     order: 1;
     background-color: $theme-secondary;
+    main + main {
+      margin-top: $gutter * 2;
+      border-top: 2px solid rgba($theme-primary, .5);
+      padding-top: $gutter * 2;
+    }
   }
   .layout-secondary-aside {
     order: 2;
@@ -73,6 +78,7 @@ $columns: 24;
       > main {
         width: 860px;
       }
+
     }
     .layout-secondary-aside {
       @include flexbox();
