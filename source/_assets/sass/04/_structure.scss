@@ -56,7 +56,11 @@ $columns: 24;
   }
   @media (min-width: $screen-lg) {
     .layout-secondary-aside {
-      @include flex-basis(400px);
+      @include flex-basis(320px);
+    }
+    .secondary-main {
+      margin: 0 auto;
+      max-width: 600px;
     }
   }
 
@@ -75,8 +79,24 @@ $columns: 24;
       @include flex-basis(30vw);
       @include justify-content(flex-end);
       > aside {
+        width: 320px;
+      }
+    }
+  }
+  @media (min-width: 1540px) {
+    .layout-secondary-aside {
+      @include flex-basis(400px);
+      > aside {
         width: 400px;
       }
     }
   }
+}
+.main-options {
+  @include flexbox();
+  @include flex-direction(row);
+  @include align-items(center);
+  @include justify-content(space-between);
+  margin-bottom: $gutter;
+  button {}
 }

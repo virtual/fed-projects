@@ -77,3 +77,34 @@ input {
   border-radius: $input-border-radius;
   background-color: rgba($color-white, .8);
 }
+
+.btn-check {
+  position: absolute;
+  clip: rect(0,0,0,0);
+  pointer-events: none;
+}
+.form-quiz-container {
+  text-align: center;
+  input[type=submit],
+  button[type=submit] {
+    margin-top: $gutter;
+  }
+}
+.form-quiz {
+  @include flexbox();
+  @include flex-wrap(wrap);
+  margin-right: $gutter * -0.5;
+  margin-left: $gutter * -0.5;
+  .btn, .btn-radio {
+    @include flex-basis(calc(50% - #{$gutter} * 1));
+    margin-bottom: $gutter;
+    margin-right: $gutter * 0.5;
+    margin-left: $gutter * 0.5;
+    min-height: 110px;
+
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-direction(column);
+  }
+}

@@ -25,6 +25,13 @@
         <ul class="list-unstyled list-inline">
           <li><a href="#">Sign Up</a></li>
           <li><a href="#">Login</a></li>
+          <li class="menu-user"><a href="#">Virtual 
+            <img alt="" src="https://www.satinflame.com/img/icons/apple-touch-icon.png" width="34" height="34" class="rounded-circle">
+          </a></li>
+          <li><a href="#">
+            <span class="fal fa-cog"></span>
+            <span class="sr-only">settings</span>
+          </a></li>
         </ul>
       </nav>
     </div>
@@ -37,11 +44,13 @@
   <main class="main container py-5">
 
 
-    
+
     <div class="theme-inversed">
-      <p class="text-center my-0"><img style="height: 200px;" height="200" src="../resources/04/pets/pet-wolf.png" alt="wolf"/></p>
+      <p class="text-center my-0"><img style="height: 200px;" height="200" src="../resources/04/pets/pet-wolf.png"
+          alt="wolf" /></p>
       <h2 class="text-center mt-0 h2">Join for free!</h2>
-      <p class="lead text-center type-constrained-width">Distant Life combines virtual pet experience with interactive language learning and practice, making your learning fun and exciting.</p>
+      <p class="lead text-center type-constrained-width">Distant Life combines virtual pet experience with interactive
+        language learning and practice, making your learning fun and exciting.</p>
     </div>
 
     <section class="card-container">
@@ -53,7 +62,8 @@
         </div>
         <h3>Grow your family of pets as you learn more!</h3>
 
-        <p>The more lessons you complete, the more points you earn toward purchasing additional pets, account upgrades, and new lessons! </p>
+        <p>The more lessons you complete, the more points you earn toward purchasing additional pets, account upgrades,
+          and new lessons! </p>
       </div>
 
 
@@ -83,31 +93,31 @@
     <section class="my-4">
 
       <form class="mx-auto centered">
-        
-          <div class="form-group">
-            <label for="username">Username</label>
-            <input id="username" name="username" type="text" />
-          </div>
-          <div class="form-group">
-            <label for="email">Email address</label>
-            <input id="email" name="email" type="text" />
-          </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input id="password" name="password" type="password" />
-          </div>
-          <div class="form-group">
-            <label for="confirmation">Retype Password</label>
-            <input id="confirmation" name="confirmation" type="password" />
-          </div>
-        
+
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="text" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" />
+        </div>
+        <div class="form-group">
+          <label for="confirmation">Retype Password</label>
+          <input id="confirmation" name="confirmation" type="password" />
+        </div>
+
         <button type="submit">Sign Up</button>
       </form>
     </section>
 
   </main>
 
-  
+
 
 </div>
 
@@ -118,34 +128,77 @@
       <nav class="breadcrumb" aria-label="breadcrumb">
         <ol>
           <li><a href="#">
-            <span class="fal fa-home-alt"></span>
-            <span class="sr-only">home</span>  
-          </a><meta property="position" content="1"></li>
-          <li><a class="active" aria-current="page" href="#">Training</a><meta property="position" content="2"></li>
+              <span class="fal fa-home-alt"></span>
+              <span class="sr-only">home</span>
+            </a>
+            <meta property="position" content="1">
+          </li>
+          <li><a class="active" aria-current="page" href="#">Training</a>
+            <meta property="position" content="2">
+          </li>
         </ol>
       </nav>
-      <p>things</p>
+      <div class="secondary-main">
+
+        <header>
+          <div class="main-options">
+            <h1>Mango</h1>
+            <div class="options">
+              <button class="btn-option">
+                <span class="fal fa-volume"></span>
+                <span class="sr-only">play audio</span>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <form class="form-quiz-container">
+          <div class="form-quiz">
+            <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
+            <label class="btn btn-radio" for="option1">Checked</label>
+
+            <input type="radio" class="btn-check" name="options" id="option2" autocomplete="off">
+            <label class="btn btn-radio btn-success" for="option2">Success</label>
+
+            <input type="radio" class="btn-check" name="options" id="option3" autocomplete="off">
+            <label class="btn btn-radio btn-error" for="option3">Error</label>
+
+            <input type="radio" class="btn-check" name="options" id="option4" autocomplete="off">
+            <label class="btn btn-radio" for="option4">Radio</label>
+          </div>
+          <button type="submit" class="btn-red">Skip</button>
+        </form>
+      </div>
+
     </main>
   </div>
   <div class="layout-secondary-aside theme-inversed">
     <aside>
       <h3>Unnamed Pet</h3>
+      <p class="text-small-caps mb-0">Level 2</p>
+      <div class="progressbar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+        <span class="filled" style="width: 20%;"></span>
+        <span class="sr-only">20%</span>
+      </div>
+
       <dl class="list-stats">
         <dt>
           <span class="fal fa-star"></span>
-          <span class="sr-only">star</span></dt>
+          <span class="sr-only">star</span>
+        </dt>
         <dd>10 words learned</dd>
       </dl>
       <dl class="list-stats">
         <dt>
           <span class="fal fa-coins"></span>
-          <span class="sr-only">coins</span></dt>
+          <span class="sr-only">coins</span>
+        </dt>
         <dd>$13.00</dd>
       </dl>
-  <h3>Latest Notifications:</h3>
+      <h3>Latest Notifications:</h3>
       <ul>
-    <li>Badge: Grocery Run</li>
-  </ul>
+        <li>Badge: Grocery Run</li>
+      </ul>
 
     </aside>
   </div>
@@ -153,10 +206,10 @@
 
 <div class="sub-footer-container theme-inversed">
   <aside class="container text-center py-3">
-  <p class="h1 color-yellow">
-    <span class="fal fa-cat-space"></span>
-    <span class="sr-only">space cat</span>
-  </p>
+    <p class="h1 color-yellow">
+      <span class="fal fa-cat-space"></span>
+      <span class="sr-only">space cat</span>
+    </p>
     <h2>Begin your language-learning journey today!</h2>
     <p><a href="#" class="btn btn-primary">Get Started</a></p>
   </aside>

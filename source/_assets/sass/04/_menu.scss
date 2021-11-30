@@ -8,7 +8,16 @@
       font-weight: 400;
       font-size: $theme-font-size-base * .9;
       &:hover {
-        color: $color-white;
+        color: $theme-link-color;
+      }
+    }
+    .menu-user a {
+      position: relative;
+      padding-right: calc(#{$gutter} * 3 + 10px);
+      .rounded-circle {
+        right: 10px;
+        top: 6px;
+        position: absolute;
       }
     }
   }
@@ -27,4 +36,13 @@
       }
     }
   }
+
+  .rounded-circle { 
+    width: 34px;
+    height: 34px;
+    font-size: 10px;
+  }
+}
+.rounded-circle {
+  border-radius: 50%!important;
 }
