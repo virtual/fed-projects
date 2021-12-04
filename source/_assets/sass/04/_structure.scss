@@ -14,6 +14,9 @@ footer.footer {
 }
 header.header {
   padding: 0;
+  min-height: 60px;
+  align-items: center;
+  flex-direction: row;
   .container {
     @media (min-width: $screen-lg) {
       padding: 0;
@@ -29,6 +32,7 @@ $columns: 24;
 .layout-secondary {
   @include flexbox();
   @include flex-direction(column);
+  @include flex-grow(1);
   width: 100%;
   .layout-secondary-main, 
   .layout-secondary-aside {
@@ -105,4 +109,30 @@ $columns: 24;
   @include justify-content(space-between);
   margin-bottom: $gutter;
   button {}
+}
+
+.display-sm {
+  display: inline-block !important;
+  @media (min-width: $screen-md) {
+    display: none !important;
+  }
+}
+.hide-sm {
+  display: none !important;
+  @media (min-width: $screen-md) {
+    display: inline-block !important;
+  }
+}
+
+.display-md {
+  display: inline-block !important;
+  @media (min-width: $screen-lg) {
+    display: none !important;
+  }
+}
+.hide-md {
+  display: none !important;
+  @media (min-width: $screen-lg) {
+    display: inline-block !important;
+  }
 }

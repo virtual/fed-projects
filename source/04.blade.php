@@ -28,10 +28,15 @@
           <li class="menu-user"><a href="#">Virtual 
             <img alt="" src="https://www.satinflame.com/img/icons/apple-touch-icon.png" width="34" height="34" class="rounded-circle">
           </a></li>
-          <li><a href="#">
+          <li class="has-dropdown"><a class="hide-md" href="#" aria-haspopup="true">
             <span class="fal fa-cog"></span>
             <span class="sr-only">settings</span>
-          </a></li>
+          </a>
+            <ul class="dropdown" aria-label="submenu">
+              <li><a href="#">Settings</a></li>
+              <li><a href="/logout">Logout</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </div>
@@ -327,7 +332,7 @@
         <img width="200" height="200" src="../resources/04/pets/pet-wolf.png"
         alt="wolf" />
       </p>
-      <h3>Unnamed Pet</h3>
+      <h3>Unnamed Pet <span class="badge">Active Pet</span> </h3>
       <p class="text-small-caps mb-0">Level 2</p>
       <div class="progressbar" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
         <span class="filled" style="width: 20%;"></span>
