@@ -22,9 +22,6 @@
   }
 }
 
-
-
-
 form.centered {
   @include flexbox();
   @include justify-content(space-around);
@@ -88,4 +85,27 @@ input {
       min-height: 110px;
     }
   }
+}
+
+
+fieldset, legend {
+  color: $color-white;
+  border-color: rgba($color-white, .3);
+}
+legend {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+form + form {
+  margin-top: $gutter;
+}
+fieldset {
+  width: 100%;
+}
+select {
+  padding: $gutter * .25;
+  font-size: $theme-font-size-base;
+}
+input[type=submit], button, select, option {
+  cursor: pointer;
 }

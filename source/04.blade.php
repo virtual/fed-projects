@@ -147,7 +147,7 @@
 
         <header>
           <div class="main-options">
-            <h1>Mango</h1>
+            <h1>עגבנייה</h1>
             <div class="options">
               <button class="btn-option">
                 <span class="fal fa-volume"></span>
@@ -157,6 +157,14 @@
           </div>
         </header>
 
+        <figure class="learn-word">
+          <div class="figure-img"><img src="../resources/04/words/tomato.png" alt="tomato"></div>
+          <figcaption class="main-options">
+            <p>Tomato</p>
+            <p>1/15</p>
+          </figcaption>
+        </figure>
+        
         <form class="form-quiz-container">
           <div class="form-quiz">
             <input type="radio" class="btn-check" name="options" id="option1" autocomplete="off">
