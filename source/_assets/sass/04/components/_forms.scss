@@ -109,3 +109,11 @@ select {
 input[type=submit], button, select, option {
   cursor: pointer;
 }
+td.form-options form {
+  display: inline-block;
+  width: auto;
+  margin-top: 0;
+}
+input {
+  color: $theme-primary;
+}

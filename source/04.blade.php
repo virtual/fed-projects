@@ -115,6 +115,15 @@
           <label for="confirmation">Retype Password</label>
           <input id="confirmation" name="confirmation" type="password" />
         </div>
+        <fieldset>
+          <legend>Upload words via CSV</legend>
+          <input name="word_set_id" type="hidden" value="val" />
+          <div class="form-group">
+            <label for="setname">Set Name</label>
+            <input type="file" name="file">
+          </div> 
+          
+        </fieldset>
 
         <button type="submit">Sign Up</button>
       </form>

@@ -7,7 +7,7 @@
 
         <title>Distant Life</title>
 <meta name="description" content="Mew mew">
-<link rel="stylesheet" href="https://virtual.github.io/fed-projects/assets/build/css/proj04.css?id=011d53cb468220938c04">
+<link rel="stylesheet" href="https://virtual.github.io/fed-projects/assets/build/css/proj04.css?id=650a81495f5e89c948ed">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&family=Noto+Sans+Hebrew:wght@400;700&display=swap" />
@@ -135,6 +135,15 @@
           <label for="confirmation">Retype Password</label>
           <input id="confirmation" name="confirmation" type="password" />
         </div>
+        <fieldset>
+          <legend>Upload words via CSV</legend>
+          <input name="word_set_id" type="hidden" value="val" />
+          <div class="form-group">
+            <label for="setname">Set Name</label>
+            <input type="file" name="file">
+          </div> 
+          
+        </fieldset>
 
         <button type="submit">Sign Up</button>
       </form>

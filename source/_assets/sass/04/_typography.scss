@@ -30,7 +30,13 @@ $headingcountmax: 4;
     font-size: 18px;
     margin-bottom: 0;
   }
+  h1 {
+    font-size: 24px;
+  }
 }
 .text-lowercase {
   text-transform: lowercase;
+}
+h1 .badge {
+  top: -3px;
 }
